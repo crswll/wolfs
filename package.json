@@ -1,0 +1,24 @@
+{
+  "name": "wolfs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "css-loader": "^1.0.1",
+    "next": "^7.0.2",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.4.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "tailwindcss": "^0.7.2"
+  }
+}
