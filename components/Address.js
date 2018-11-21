@@ -1,8 +1,11 @@
 import { title, hours, contact } from '../wolfs'
 
-export default () => {
+const Address = ({
+  className: parentClassNames,
+  ...props
+}) => {
   return (
-    <div itemScope itemType="http://schema.org/LocalBusiness">
+    <div className={parentClassNames} itemScope itemType="http://schema.org/LocalBusiness" {...props}>
       <div itemProp="name">{title}</div>
       <div>Phone: <span itemProp="telephone">{contact.phone}</span></div>
 
@@ -20,3 +23,5 @@ export default () => {
 
   )
 }
+
+export default Address

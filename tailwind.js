@@ -5,9 +5,17 @@ const pxToRem = (px, base = 16) => `${px / base}rem`
 const colors = {
   'transparent': 'transparent',
   'primary': 'var(--primary)',
+  'darkest': 'var(--darkest)',
+  'darker': 'var(--darker)',
+  'dark': 'var(--darke)',
+  'neutral': 'var(--neutral)',
+  'light': 'var(--light)',
+  'lighter': 'var(--lighter)',
+  'lightest': 'var(--lightest)',
 }
 
 const spacing = {
+  0: 0,
   1: pxToRem(5),
   2: pxToRem(15),
   3: pxToRem(30),
@@ -17,10 +25,24 @@ const spacing = {
 
 const lengths = {
   '0': '0',
+  '1': '1px',
+  '2': '2px',
+  '5': '5px',
   '10': '10px',
+  '20': '20px',
   '25': '25px',
   '50': '50px',
   '75': '75px',
+  '100': '100px',
+  '150': '150px',
+  '200': '200px',
+  '225': '225px',
+  '250': '250px',
+  '300': '300px',
+  '320': '320px',
+  '500': '500px',
+  '750': '750px',
+  '1000': '1000px',
   '1/2': '50%',
   '1/3': '33.33333%',
   '2/3': '66.66667%',
@@ -49,7 +71,8 @@ module.exports = {
   colors: colors,
 
   screens: {
-    'md': '768px',
+    narrow: '650px',
+    wide: '800px',
   },
 
   fonts: {
@@ -67,14 +90,23 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif',
     ],
+    'serif': [
+      'Maitree',
+      'serif',
+    ],
   },
 
   textSizes: {
+    '14': '14px',
+    '16': '16px',
+
     'scale-n1': pxToRem(14),
     'scale-0': pxToRem(16),
     'scale-1': pxToRem(18),
-    'scale-2': pxToRem(24),
-    'scale-3': pxToRem(36),
+    'scale-2': pxToRem(20),
+    'scale-3': pxToRem(24),
+    'scale-4': pxToRem(28),
+    'scale-5': pxToRem(32),
   },
 
   fontWeights: {
@@ -115,9 +147,11 @@ module.exports = {
   borderWidths: {
     default: '1px',
     '0': '0',
+    '1': '1px',
     '2': '2px',
-    '4': '4px',
-    '8': '8px',
+    '5': '5px',
+    '10': '10px',
+    'large': '20px',
   },
 
   borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
@@ -253,12 +287,7 @@ module.exports = {
     zIndex: ['responsive'],
   },
 
-  plugins: [
-    require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
-    }),
-  ],
+  plugins: [],
 
   options: {
     prefix: '',
