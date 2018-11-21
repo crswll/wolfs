@@ -17,15 +17,19 @@ const MenuSection = ({
   return (
     <div className={classnames(parentClassNames, 'py-2 px-3 mt-2')}>
       <MenuSectionTitle
-        className="-mx-2 pl-2"
+        className="-mx-2 pl-2 font-600"
         headerLevel={headerLevel}
       >
         {title}
       </MenuSectionTitle>
-      <div
-        className="text-neutral mb-2 py-1"
-        children={description}
-      />
+
+      {description && (
+        <div
+          className="text-darker py-1"
+          children={description}
+        />
+      )}
+
       <ul className="list-reset narrow:flex narrow:justify-between narrow:flex-wrap">
         {items && items.map((item, index) =>
           <SimpleMenuItem
@@ -35,9 +39,12 @@ const MenuSection = ({
           />
         )}
       </ul>
-      <footer className="text-scale-n1 text-light">
-        {footnotes}
-      </footer>
+
+      {footnotes && (
+        <footer className="text-darker border-t-1 border-lighter mt-2 pt-2">
+          {footnotes}
+        </footer>
+      )}
     </div>
   )
 }

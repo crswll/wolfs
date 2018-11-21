@@ -11,11 +11,15 @@ export const hours = [
   { days: "Sun", open: 11, close: 9 },
 ]
 
+export const tagNames = {
+  'SR': 'Seeded Roll',
+  'GF': 'Gluten Free',
+}
+
 export const menuSections = [
   {
     title: "Speciality Sandwiches",
-    description: 'Just a description',
-    footnotes: 'WHOA AWESOME',
+    description: "Likely the reason you're here.",
     items: [
       {
         "name": "The Ashley",
@@ -176,6 +180,7 @@ export const menuSections = [
   },
   {
     "title": "Specialty Hot Dogs",
+    "description": "Serves w/ Chips and One Side",
     "items": [
       {
         "name": "The Chronic",
@@ -194,7 +199,6 @@ export const menuSections = [
       },
       {
         "name": "The Chi",
-        "description": "own",
         "description": "mustard, onions, relish, pickles, tomato, jalapeno",
         "price": 7
       },
@@ -252,6 +256,7 @@ export const menuSections = [
   },
   {
     "title": "Tacos",
+    "description": "Served on White Cord Tortilla",
     "items": [
       {
         "name": "Carnitas",
@@ -290,5 +295,155 @@ export const menuSections = [
         "tags": ['GF'],
       },
     ]
-  }
+  },
+  {
+    "title": "Appetizers",
+    "items": [
+      {
+        "name": "Chicken Fingers",
+        "price": 6,
+      },
+      {
+        "name": "French Fries",
+        "price": 4,
+      },
+      {
+        "name": "Chorizo Cheddar Empanadas",
+        "price": 7,
+      },
+      {
+        "name": "BBQ Cheddar Ranch Fries",
+        "price": 5.5,
+      },
+      {
+        "name": "Mozzarella sticks",
+        "price": 5.5,
+      },
+      {
+        "name": "Chili Cheese Fries",
+        "price": 7,
+      },
+      {
+        "name": "Smoked gouda mac and cheese bites",
+        "price": 5,
+      },
+      {
+        "name": "Cheesesteak Egg Rolls",
+        "price": 8,
+      },
+      {
+        "name": "Fried pickles",
+        "price": 5,
+      },
+      {
+        "name": "Onion rings",
+        "price": 5,
+      },
+    ],
+  },
+  {
+    "title": "Sides",
+    "items": [
+      {
+        "name": "Pasta Salad",
+        "price": 2,
+      },
+      {
+        "name": "Cucumber Apple Slaw	Potato Salad",
+        "price": 2,
+      },
+      {
+        "name": "Macaroni Salad",
+        "price": 2,
+      },
+      {
+        "name": "Artichoke Bruschetta",
+        "price": 2,
+      },
+      {
+        "name": "Tomato Salad",
+        "price": 2,
+      },
+      {
+        "name": "Purple Cabbage Slaw",
+        "price": 2,
+      },
+      {
+        "name": "Balsamic Onion Jam",
+        "price": 2,
+      },
+      {
+        "name": "Bruschetta",
+        "price": 2,
+      },
+    ]
+  },
+  {
+    "title": "Wings",
+    "description": "House Wings or Breaded Wing Dings served with Choice of Bleu Cheese or Ranch",
+    "items": [
+      {
+        "name": 10,
+        "price": 10,
+      },
+      {
+        "name": 20,
+        "price": 18,
+      },
+      {
+        "name": 30,
+        "price": 25,
+      },
+      {
+        "name": 50,
+        "price": 40,
+      },
+      {
+        "name": 10,
+        "price": 75,
+      },
+    ],
+    "footnotes": "Sauces: Hot, Mild, Roasted Garlic Hot, BBQ, Honey BBQ, Bourbon BBQ, Honey Chipotle",
+  },
+  {
+    "title": "Salads",
+    "description": "Add Protein $2.50",
+    "items": [
+      {
+        "name": "Chopped Wedge",
+        "description": "iceberg, bleu cheese dressing, bleu cheese crumbles, grape tomatoes, crispy bacon, croutons",
+        "price": 8,
+      },
+      {
+        "name": "Caesar",
+        "description": "romaine, parmesan, croutons, shaved parmesan, grape tomatoes, creamy caesar dressing",
+        "price": 7,
+      },
+      {
+        "name": "House",
+        "description": "spring mix, grape tomatoes, cucumber, red onion, balsamic vinaigrette, croutons",
+        "price": 7,
+      },
+      {
+        "name": "Taco",
+        "description": "romaine, tomato, avocado, cheddar cheese, salsa, seasoned beef, tortilla strips, chipotle ranch",
+        "price": 9,
+      },
+      {
+        "name": "The Winterfell",
+        "description": "arugula, dried cherries, bleu cheese crumbles, red onion, candied walnuts, champagne vinaigrette",
+        "price": 9,
+      },
+      {
+        "name": "Caprese",
+        "description": "sliced tomato, panko breaded mozzarella, pesto sauce, arugula, red wine vinaigrette, balsamic reduction",
+        "price": 9,
+      },
+      {
+        "name": "Aston Spin",
+        "description": "baby spinach, grape tomatoes, hard boiled egg, chopped bacon, goat cheese, toasted almonds, red onion, red wine vinaigrette",
+        "price": 9,
+      },
+    ],
+  },
 ]
