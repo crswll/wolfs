@@ -13,7 +13,7 @@ const SimpleMenuItem = ({
   const HeaderTag = `h${headerLevel}`
 
   return (
-    <div className={classnames(parentClassNames)}>
+    <li className={classnames(parentClassNames)}>
       <HeaderTag className="text-scale-2 flex items-baseline text-dark">
         <span className="mr-1 mb-1 block font-600" children={name} />
         {tags && (
@@ -36,7 +36,7 @@ const SimpleMenuItem = ({
           {description}
         </p>
       }
-    </div>
+    </li>
   )
 }
 

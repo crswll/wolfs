@@ -12,8 +12,8 @@ export const hours = [
 ]
 
 export const tagNames = {
-  'SR': 'Seeded Roll',
-  'GF': 'Gluten Free',
+  'SR': 'On A Seeded Roll',
+  'GF': 'Available Gluten Free',
   'W': 'White',
 }
 
@@ -216,7 +216,7 @@ export const menuSections = [
         "price": 8
       },
       {
-        "name": "The Chi",
+        "name": "The Chi-Town",
         "description": "mustard, onions, relish, pickles, tomato, jalapeno",
         "price": 7
       },

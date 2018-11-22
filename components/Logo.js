@@ -16,6 +16,7 @@ const Logo = ({
           src="/static/logo-horizontal.png"
           alt=""
         />
+        <span class="visually-hidden">Wolf's Superior Sandwiches</span>
       </div>
     </div>
   )

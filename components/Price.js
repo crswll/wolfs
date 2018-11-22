@@ -14,7 +14,7 @@ function getType (value) {
 const single = price => <span className="text-primary-darker font-600">{toUSD(price)}</span>
 
 const multiple = pricing => (
-  <ul className="list-reset flex flex-col text-scale-1">
+  <ul className="list-reset flex flex-col text-scale-1" aria-label="Pricing">
     {pricing.map(({ label, price }) =>
       <li key={label} className="mr-1">
         {single(price)} <span className="text-neutral">{label}</span>

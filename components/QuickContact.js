@@ -10,7 +10,7 @@ const QuickContact = ({
       <div>
         {street}, {city}, {state} {postal}
       </div>
-      <ul className="list-reset wide:mx-2">
+      <ul className="list-reset wide:mx-2" aria-label="Shop Hours">
         {hours.map(({ days, open, close }, index) =>
           <li key={index} className="inline mr-1">
             {days} {open}-{close} {index !== hours.length - 1 && '/' }

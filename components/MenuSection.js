@@ -15,7 +15,7 @@ const MenuSection = ({
   ...props,
 }) => {
   return (
-    <div className={classnames(parentClassNames)}>
+    <section className={classnames(parentClassNames)} aria-label={title}>
       <MenuSectionTitle
         className="-mx-2 pl-2 font-600"
         headerLevel={headerLevel}
@@ -33,6 +33,7 @@ const MenuSection = ({
       <ul className="list-reset narrow:flex narrow:justify-between narrow:flex-wrap">
         {items && items.map((item, index) =>
           <SimpleMenuItem
+            headerLevel={headerLevel + 1}
             key={index}
             className="my-1 my-3 narrow:p-2 narrow:pb-0 narrow:-mx-2 narrow:w-1/2 narrow:my-1"
             item={item}
@@ -45,7 +46,7 @@ const MenuSection = ({
           {footnotes}
         </footer>
       )}
-    </div>
+    </section>
   )
 }
 
