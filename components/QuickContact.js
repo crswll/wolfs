@@ -1,7 +1,7 @@
 import React from 'react'
 import FacebookLogo from './Facebook'
 import TwitterLogo from './Twitter'
-import { street, city, state, postal, hours, phone, networks } from '../wolfs'
+import { name, street, city, state, postal, hours, phone, networks } from '../wolfs'
 
 const QuickContact = ({
   className: parentClassNames,
@@ -10,6 +10,7 @@ const QuickContact = ({
   const [ fb, twitter ] = networks
   return (
     <div className={`${parentClassNames || ''} text-center text-darker text-scale-0 font-400 items-center`} {...props}>
+      <h1 className="text-scale-5 font-600 leading-tight">{name}</h1>
       <div>
         {street}, {city}, {state} {postal}
       </div>

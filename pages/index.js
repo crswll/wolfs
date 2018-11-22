@@ -26,7 +26,7 @@ const Home = () => (
     <Container>
       <Logo
         title={name}
-        className="w-250 mx-auto wide:w-500 -mt-2"
+        className="w-250 mx-auto wide:w-300 -mt-2"
       />
     </Container>
     <MenuButton
@@ -45,11 +45,11 @@ const Home = () => (
 
     <Container className="px-3" id="menu">
       <h1 className="text-scale-5 mb-2">Menu</h1>
-      <ul className="list-reset text-scale-n1  narrow:text-scale-0 mb-2 leading-loose">
+      <ul className="list-reset text-scale-0 narrow:text-scale-1 mb-2 leading-loose md:leading-normal">
         {menuSectionOrder.map(section =>
           <li key={section} className="inline-block after:comma mr-1">
             <a
-              className="text-primary-darker"
+              className="text-primary-darker no-underline"
               href={`#${kebab(section)}`}
               children={section}
             />
