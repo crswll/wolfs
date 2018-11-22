@@ -1,5 +1,5 @@
 export const name = "Wolf's Superior Sandwiches"
-export const phone = "484.487.3970"
+export const phone = ""
 export const street = "4417 Pennell Rd."
 export const city = "Aston"
 export const state = "PA"
@@ -14,13 +14,30 @@ export const hours = [
 export const tagNames = {
   'SR': 'Seeded Roll',
   'GF': 'Gluten Free',
+  'W': 'White',
 }
+
+export const menuSectionOrder = [
+  "Speciality Sandwiches",
+  "Speciality Burgers",
+  "Specialty Hot Dogs",
+  "Speciality Pizza",
+  "Tacos",
+  "Appetizers",
+  "Sides",
+  "Salads",
+  "Wings",
+  "Soups",
+  "Pizza",
+  "Premium Grilled Sandwiches",
+  "Hoagies & Sandwiches",
+]
 
 export const menuSections = [
   {
-    title: "Speciality Sandwiches",
-    description: "Likely the reason you're here.",
-    items: [
+    "title": "Speciality Sandwiches",
+    "description": "Likely the reason you're here.",
+    "items": [
       {
         "name": "The Ashley",
         "description": "panko breaded mozzarella, roma tomatoes, basil aioli, arugula, balsamic reduction",
@@ -55,7 +72,7 @@ export const menuSections = [
         "name": "The Pesci",
         "description": "prosciutto di parma, sopressata, hot capicola, Genoa salami, sliced Roma tomatoes, red onion, aged sharp provolone, red wine vinegar, olive oil, red pepper flakes",
         "price": 9.5,
-        "tags": [],
+        "tags": ['GF'],
       },
       {
         "name": "The Pickle Rick",
@@ -138,8 +155,9 @@ export const menuSections = [
     ],
   },
   {
-    title: "Speciality Burgers",
-    items: [
+    "title": "Speciality Burgers",
+    "description": "All Burgers are Half Pound in Weight and Certified Wagyu Beef. Served with Chips and One Side",
+    "items": [
       {
         "name": "The G.O.A.T.",
         "description": "baby arugula, balsamic onion jam, goat cheese",
@@ -180,7 +198,7 @@ export const menuSections = [
   },
   {
     "title": "Specialty Hot Dogs",
-    "description": "Serves w/ Chips and One Side",
+    "description": "Served with Chips and One Side",
     "items": [
       {
         "name": "The Chronic",
@@ -215,83 +233,110 @@ export const menuSections = [
       {
         "name": "Upside Down",
         "description": "mozzarella, provolone, pecorino with sauce on top",
-        "price": "(sm-$10, lg-$14)",
+        "price": [
+          { "label": "Sm", "price": 10 },
+          { "label": "Lg", "price": 14 },
+        ],
       },
       {
-        "name": "Delco Scrappy*",
+        "name": "Delco Scrappy",
         "description": "scrapple, caramelized onions, sriracha ketchup, cheese sauce",
-        "price": "(sm-$13.50, lg-$17.5)",
+        "price": [
+          { "label": "Sm", "price": 13.5 },
+          { "label": "Lg", "price": 17.5 },
+        ],
+        "tags": ["W"],
       },
       {
         "name": "Spicy Pina",
         "description": "ham, pineapple, banana pepper, hot sauce",
-        "price": "(sm-$13.5, lg-$17.5)",
+        "price": [
+          { "label": "Sm", "price": 13.5 },
+          { "label": "Lg", "price": 17.5 },
+        ],
       },
       {
         "name": "Saucy Taco",
         "description": "seasoned beef, mozzarella, cheddar, red onion, salsa",
-        "price": "(sm-$14, lg-$18)",
+        "price": [
+          { "label": "Sm", "price": 14 },
+          { "label": "Lg", "price": 18 },
+        ],
       },
       {
-        "name": "Philly Philly*",
+        "name": "Philly Philly",
         "description": "chopped steak, caramelized onion, cheese sauce, sriracha ketchup",
-        "price": "(sm-$13.5, lg-$17.5)",
+        "price": [
+          { "label": "Sm", "price": 13.5 },
+          { "label": "Lg", "price": 17.5 },
+        ],
       },
       {
-        "name": "Buff Chic*",
+        "name": "Buff Chic",
         "description": "grilled chicken, hot sauce, bleu cheese",
-        "price": "(sm-$12.5, lg-$16.5)",
+        "price": [
+          { "label": "Sm", "price": 12.5 },
+          { "label": "Lg", "price": 16.5 },
+        ],
+        "tags": ["W"],
       },
       {
-        "name": "Amarillo Smokehouse*",
+        "name": "Amarillo Smokehouse",
         "description": "pulled brisket, onion rings, jalapeno, smoked cheddar, bourbon bbq",
-        "price": "(sm-$15, lg-$19)",
+        "price": [
+          { "label": "Sm", "price": 15 },
+          { "label": "Lg", "price": 19 },
+        ],
+        "tags": ["W"],
       },
       {
         "name": "Anti-pie-sto",
         "description": "prosciutto di Parma, soppressata, hot capaccola, Genoa salami, pepperoni, black olives, roma tomato, red onion, arugula, shaved parmesan, oil, vinegar, balsamic reduction",
-        "price": "(sm-$16, lg-$20)",
+        "price": [
+          { "label": "Sm", "price": 16 },
+          { "label": "Lg", "price": 20 },
+        ],
       },
     ]
   },
   {
     "title": "Tacos",
-    "description": "Served on White Cord Tortilla",
+    "description": "Served on White Corn Tortilla",
     "items": [
       {
         "name": "Carnitas",
         "description": "citrus braised pork, onion, queso fresco, salsa roja, salsa verde, cilantro",
-        "price": "$8.00",
+        "price": 8,
         "tags": ['GF'],
       },
       {
         "name": "Pollo",
         "description": "pulled chicken, pickled red onion, queso fresco, chimichurri, cilantro",
-        "price": "$8.00",
+        "price": 8,
         "tags": ['GF'],
       },
       {
         "name": "Baja",
         "description": "beer battered cod, mango salsa, lettuce, chipotle ranch, cilantro",
-        "price": "$9.00",
+        "price": 9,
         "tags": [],
       },
       {
         "name": "Brisket",
         "description": "bbq brisket, smoked gouda cheese sauce, purple cabbage slaw, onions",
-        "price": "$9.00",
+        "price": 9,
         "tags": ['GF'],
       },
       {
         "name": "Gringo",
         "description": "ground beef, lettuce, salsa, sour cream, cheddar",
-        "price": "$8.00",
+        "price": 8,
         "tags": [],
       },
       {
         "name": "Pork Belly",
         "description": "spice rubbed pork belly, arugula, cucumber apple slaw, cilantro",
-        "price": "$9.00",
+        "price": 9,
         "tags": ['GF'],
       },
     ]
@@ -380,30 +425,29 @@ export const menuSections = [
   },
   {
     "title": "Wings",
-    "description": "House Wings or Breaded Wing Dings served with Choice of Bleu Cheese or Ranch",
+    "description": "House Wings or Breaded Wing Dings served with Choice of Bleu Cheese or Ranch. Sauces: Hot, Mild, Roasted Garlic Hot, BBQ, Honey BBQ, Bourbon BBQ, Honey Chipotle.",
     "items": [
       {
-        "name": 10,
+        "name": "10 Wings",
         "price": 10,
       },
       {
-        "name": 20,
+        "name": "20 Wings",
         "price": 18,
       },
       {
-        "name": 30,
+        "name": "30 Wings",
         "price": 25,
       },
       {
-        "name": 50,
+        "name": "50 Wings",
         "price": 40,
       },
       {
-        "name": 10,
+        "name": "100 Wings",
         "price": 75,
       },
     ],
-    "footnotes": "Sauces: Hot, Mild, Roasted Garlic Hot, BBQ, Honey BBQ, Bourbon BBQ, Honey Chipotle",
   },
   {
     "title": "Salads",
@@ -446,4 +490,160 @@ export const menuSections = [
       },
     ],
   },
+  {
+    "title": "Soups",
+    "items": [
+      {
+        "name": "Howling Chorizo Beef Chili",
+        "price": [
+          { "label": "Cup", "price": 4 },
+          { "label": "Pint", "price": 8 },
+          { "label": "Quart", "price": 12 },
+        ]
+      },
+      {
+        "name": "Mushroom Bisque",
+        "price": [
+          { "label": "Cup", "price": 4 },
+          { "label": "Pint", "price": 8 },
+          { "label": "Quart", "price": 12 },
+        ],
+        "tags": ["GF"],
+      },
+      {
+        "name": "Baked Potato",
+        "price": [
+          { "label": "Cup", "price": 4 },
+          { "label": "Pint", "price": 8 },
+          { "label": "Quart", "price": 12 },
+        ],
+        "tags": ["GF"],
+      },
+      {
+        "name": "Roasted Tomato & Carrot",
+        "price": [
+          { "label": "Cup", "price": 4 },
+          { "label": "Pint", "price": 8 },
+          { "label": "Quart", "price": 12 },
+        ],
+        "tags": ["GF"],
+      },
+    ]
+  },
+  {
+    "title": "Pizza",
+    "items": [
+      {
+        "name": "Small (13 inch)",
+        "price": 10,
+      },
+      {
+        "name": "Large (16 inch)",
+        "price": 14,
+      },
+      {
+        "name": "Meat Toppings",
+        "price": "+$2.00",
+        "description": "Pepperoni, sausage, ham, pulled pork, bacon, pulled chicken, chicken cutlet, grilled chicken, salami, seasoned beef, chopped steak, anchovies, cooked scrapple",
+      },
+      {
+        "name": "Veggie Toppings",
+        "price": "+$2.00",
+        "description": "Mushrooms, onions, green pepper, roasted red peppers, jalapenos, banana peppers, tomatoes, spinach, arugula, pineapple, black olives, long hots, caramelized onions, artichoke, spinach, sweet peppers",
+      },
+      {
+        "name": "Premium Toppings",
+        "price": "+$2.75",
+        "description": "Prosciutto di Parma, andouille sausage, sopressata, pulled brisket, chorizo, capocolla",
+      },
+      {
+        "name": "On Top Sauces",
+        "price": "",
+        "description": "Hot sauce, bbq, bourbon bbq, honey bbq, smoked gouda cheese sauce, cheese sauce, ranch, chipotle ranch, salsa verde, salsa roja, pesto mayo, sriracha ketchup, fresh garlic",
+      },
+      {
+        "name": "Cheeses",
+        "price": "",
+        "description": "Mozzarella, fresh mozzarella, cheddar, smoked cheddar, provolone, american, queso fresco, shaved parmesan, pecorino, bleu cheese, aged provolone, cooper sharp, riccotta",
+      },
+    ],
+  },
+  {
+    "title": "Hoagies & Sandwiches",
+    "items": [
+      {
+        "name": "Italian",
+        "price": 8,
+      },
+      {
+        "name": "Turkey & Cheese",
+        "price": 8,
+      },
+      {
+        "name": "Roast Beef",
+        "price": 8,
+      },
+      {
+        "name": "Tuna Salad",
+        "price": 8,
+      },
+      {
+        "name": "Club Sandwich",
+        "price": 7.5,
+      },
+      {
+        "name": "Chicken Salad",
+        "price": 8,
+      },
+      {
+        "name": "BLT",
+        "price": 7.5,
+      },
+      {
+        "name": "Cheese Hoagie",
+        "price": 8,
+      },
+      {
+        "name": "Ham & Cheese",
+        "price": 8,
+      },
+    ],
+  },
+  {
+    "title": "Premium Grilled Sandwiches",
+    "items": [
+      {
+        "name": "Cheesesteak",
+        "price": 9,
+      },
+      {
+        "name": "Chicken Steak",
+        "price": 9,
+      },
+      {
+        "name": "Pizzasteak",
+        "price": 9,
+      },
+      {
+        "name": "Cheeseburger",
+        "price": 9,
+      },
+      {
+        "name": "Grilled Cheese",
+        "price": 7,
+      },
+      {
+        "name": "Buffalo Chicken Steak",
+        "price": 9,
+      },
+      {
+        "name": "Grilled Ham & Cheese",
+        "price": 7.5,
+      },
+      {
+        "name": "Hamburger",
+        "price": 8,
+      },
+    ],
+  }
 ]

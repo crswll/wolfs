@@ -5,6 +5,8 @@ const pxToRem = (px, base = 16) => `${px / base}rem`
 const colors = {
   'transparent': 'transparent',
   'primary': 'var(--primary)',
+  'primary-darker': 'var(--primary-darker)',
+  'primary-lighter': 'var(--primary-lighter)',
   'darkest': 'var(--darkest)',
   'darker': 'var(--darker)',
   'dark': 'var(--darke)',
@@ -154,7 +156,7 @@ module.exports = {
     'large': '20px',
   },
 
-  borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
+  borderColors: global.Object.assign({ default: colors['neutral'] }, colors),
 
   borderRadius: {
     'none': '0',

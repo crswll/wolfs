@@ -1,7 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
+import Price from './Price'
 import { tagNames } from '../wolfs'
-import { toUSD } from '../helpers'
 
 const SimpleMenuItem = ({
   className: parentClassNames,
@@ -14,24 +14,25 @@ const SimpleMenuItem = ({
 
   return (
     <div className={classnames(parentClassNames)}>
-      <HeaderTag className="text-scale-2 font-500 mb-1 flex justify-between">
-        <span className="mr-1">
-          {name}
-          {tags && (
-            tags.map(tag =>
-              <span
+      <HeaderTag className="text-scale-2 flex items-baseline text-dark">
+        <span className="mr-1 mb-1 block font-600" children={name} />
+        {tags && (
+          <div className="ml-1">
+            {tags.map(tag =>
+              <abbr
                 key={tag}
-                className="text-scale-n1 text-darker bg-lighter border-lighter mx-1 p-1 rounded-sm"
+                className="text-scale-n1 text-neutral bg-lighter mr-1 px-1 rounded-sm"
+                style={{ textDecoration: 'none' }}
                 children={tag}
                 title={tagNames[tag]}
               />
-            )
-          )}
-        </span>
-        <span className="text-darkest">{toUSD(price)}</span>
+            )}
+          </div>
+        )}
       </HeaderTag>
+      <Price className="text-scale-1" price={price} />
       {description &&
-        <p className="mb-1 text-darker font-sans">
+        <p className="mt-1 text-darker font-sans">
           {description}
         </p>
       }

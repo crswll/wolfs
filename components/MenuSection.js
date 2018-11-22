@@ -15,7 +15,7 @@ const MenuSection = ({
   ...props,
 }) => {
   return (
-    <div className={classnames(parentClassNames, 'py-2 px-3 mt-2')}>
+    <div className={classnames(parentClassNames)}>
       <MenuSectionTitle
         className="-mx-2 pl-2 font-600"
         headerLevel={headerLevel}
@@ -34,14 +34,14 @@ const MenuSection = ({
         {items && items.map((item, index) =>
           <SimpleMenuItem
             key={index}
-            className="my-1 mb-3 narrow:p-2 narrow:pb-0 narrow:-mx-2 narrow:w-1/2 narrow:mb-0"
+            className="my-1 my-3 narrow:p-2 narrow:pb-0 narrow:-mx-2 narrow:w-1/2 narrow:my-1"
             item={item}
           />
         )}
       </ul>
 
       {footnotes && (
-        <footer className="text-darker border-t-1 border-lighter mt-2 pt-2">
+        <footer className="text-darker mt-2 pt-2">
           {footnotes}
         </footer>
       )}

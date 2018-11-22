@@ -5,9 +5,10 @@ import Logo from '../components/Logo'
 import MenuButton from '../components/MenuButton'
 import MenuSection from '../components/MenuSection'
 import QuickContact from '../components/QuickContact'
-import { name, menuSections } from '../wolfs'
-
+import { name, menuSections, menuSectionOrder } from '../wolfs'
 import "../wolfs.css"
+
+// html, body, h1, h2, h3, h4, h5, h6, 
 
 const setMenuVisibility = function (menuIsVisible) {
   this.setState({ menuIsVisible })
@@ -51,13 +52,13 @@ class Home extends Component {
           <div className="bg-darkest h-20"></div>
           <Logo
             title={name}
-            className="w-200 mx-auto wide:w-500 -mt-2"
+            className="w-250 mx-auto wide:w-500 -mt-2"
           />
           <MenuButton
             onClick={() => this.setMenuVisibility(!menuIsVisible)}
             hidden
           />
-          <Container className="text-center text-darkest font-sans uppercase text-scale-0 font-400 py-2">
+          <Container className="py-2">
             <QuickContact />
           </Container>
 
@@ -67,15 +68,27 @@ class Home extends Component {
             </Container>
           </div>
 
-          <Container>
-            {menuSections.map(section =>
+          <Container >
+            {menuSections
+              .slice()
+              .sort((sectionA, sectionB) =>
+                menuSectionOrder.indexOf(sectionA.title) - menuSectionOrder.indexOf(sectionB.title)
+              )
+              .map((section, index) =>
               <MenuSection
-                className="py-3"
+                className={`mb-3 pb-3 px-3 border-light ${index !== menuSections.length -1 && 'border-b-1'}`}
                 key={section.title}
                 {...section}
               />
             )}
           </Container>
+
+          <footer className="bg-lighter">
+              <Container className="p-3 py-2 text-scale-n1 leading-loose">
+                <p><strong>GF</strong> = Available Gluten Free, <strong>SR</strong> = Served on Seeded Roll, <strong>W</strong> = White Pizza</p>
+                <p>Consuming raw or undercooked meats, poultry, seafood, shellfish or egg may increase your risk of foodborne illness.</p>
+              </Container>
+          </footer>
         </div>
       </React.Fragment>
     )

@@ -1,10 +1,12 @@
 :root {
+  --primary-lighter: hsl(358, 70%, 95%);
   --primary: hsl(358, 83%, 53%);
+  --primary-darker: hsl(358, 83%, 30%);
   --darkest: hsl(358, 0%, 0%);
   --darker: hsl(358, 0%, 20%);
   --dark: hsl(358, 0%, 40%);
   --neutral: hsl(358, 0%, 50%);
-  --light: hsl(358, 0%, 60%);
+  --light: hsl(358, 0%, 75%);
   --lighter: hsl(358, 0%, 95%);
-  --lightest: hsl(358, 0%, 100%);
+  --lightest: hsl(358, 0%, 98%);
 }
