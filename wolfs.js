@@ -53,7 +53,7 @@ export const menuSections = [
       {
         "name": "The Gritty",
         "description": "a mix of chopped steak and habbersett scrapple, caramelized onions, spicy ketchup, creamy cheese sauce",
-        "price": 9,
+        "price": 10,
         "tags": [],
       },
       {
