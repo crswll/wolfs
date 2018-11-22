@@ -74,8 +74,12 @@ const Home = () => (
 
     <footer className="bg-lighter">
         <Container className="p-3 py-2 text-scale-n1 leading-loose">
-          <p><strong>GF</strong> = Available Gluten Free, <strong>SR</strong> = Served on Seeded Roll, <strong>W</strong> = White Pizza</p>
           <p>Consuming raw or undercooked meats, poultry, seafood, shellfish or egg may increase your risk of foodborne illness.</p>
+          <ul className="list-reset mt-2">
+            <li><strong>GF</strong> = Available Gluten Free</li>
+            <li><strong>SR</strong> = Served on Seeded Roll</li>
+            <li><strong>W</strong> = White Pizza</li>
+          </ul>
         </Container>
     </footer>
 
