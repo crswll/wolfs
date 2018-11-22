@@ -21,7 +21,7 @@ const SimpleMenuItem = ({
             {tags.map(tag =>
               <abbr
                 key={tag}
-                className="text-scale-n1 text-neutral bg-lighter mr-1 px-1 rounded-sm"
+                className="text-scale-n1 text-dark bg-lighter mr-1 px-1 rounded-sm"
                 style={{ textDecoration: 'none' }}
                 children={tag}
                 title={tagNames[tag]}

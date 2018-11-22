@@ -1,3 +1,5 @@
+import { name } from '../wolfs'
+
 const Logo = ({
   title,
   className: parentClassNames,
@@ -16,7 +18,7 @@ const Logo = ({
           src="/static/logo-horizontal.png"
           alt=""
         />
-        <span class="visually-hidden">Wolf's Superior Sandwiches</span>
+        <span className="visually-hidden">{name}</span>
       </div>
     </div>
   )

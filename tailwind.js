@@ -14,6 +14,8 @@ const colors = {
   'light': 'var(--light)',
   'lighter': 'var(--lighter)',
   'lightest': 'var(--lightest)',
+  'facebook': '#3b5998',
+  'twitter': '#1da1f2',
 }
 
 const spacing = {

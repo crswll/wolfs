@@ -1,10 +1,22 @@
 export const name = "Wolf's Superior Sandwiches"
-export const phone = ""
+export const phone = "484-487-3970"
 export const street = "4417 Pennell Rd."
 export const city = "Aston"
 export const state = "PA"
 export const postal = "19104"
 
+export const networks = [
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/WolfsSuperiorSandwiches",
+    "text": "Like Us on Facebook!",
+  },
+  {
+    "name": "Twitter",
+    "url": "https://twitter.com/wolfssuperiorsandwiches",
+    "text": "Follow Us on Twitter",
+  },
+]
 export const hours = [
   { days: "Mon-Thurs", open: 11, close: 10 },
   { days: "Fri-Sat", open: 11, close: 11 },
@@ -38,6 +50,12 @@ export const menuSections = [
     "title": "Speciality Sandwiches",
     "description": "Likely the reason you're here.",
     "items": [
+      {
+        "name": "The Gritty",
+        "description": "a mix of chopped steak and habbersett scrapple, caramelized onions, spicy ketchup, creamy cheese sauce",
+        "price": 9,
+        "tags": [],
+      },
       {
         "name": "The Ashley",
         "description": "panko breaded mozzarella, roma tomatoes, basil aioli, arugula, balsamic reduction",
@@ -144,12 +162,6 @@ export const menuSections = [
         "name": "The Thanksgiving Jawn",
         "description": "sliced Turkey, stuffing, cranberry, mayo",
         "price": 9.5,
-        "tags": [],
-      },
-      {
-        "name": "The Gritty",
-        "description": "a mix of chopped steak and habbersett scrapple, caramelized onions, spicy ketchup, creamy cheese sauce",
-        "price": 9,
         "tags": [],
       },
     ],
@@ -543,17 +555,17 @@ export const menuSections = [
       },
       {
         "name": "Meat Toppings",
-        "price": "+$2.00",
+        "price": "+$2.00 Each",
         "description": "Pepperoni, sausage, ham, pulled pork, bacon, pulled chicken, chicken cutlet, grilled chicken, salami, seasoned beef, chopped steak, anchovies, cooked scrapple",
       },
       {
         "name": "Veggie Toppings",
-        "price": "+$2.00",
+        "price": "+$2.00 Each",
         "description": "Mushrooms, onions, green pepper, roasted red peppers, jalapenos, banana peppers, tomatoes, spinach, arugula, pineapple, black olives, long hots, caramelized onions, artichoke, spinach, sweet peppers",
       },
       {
         "name": "Premium Toppings",
-        "price": "+$2.75",
+        "price": "+$2.75 Each",
         "description": "Prosciutto di Parma, andouille sausage, sopressata, pulled brisket, chorizo, capocolla",
       },
       {
@@ -647,3 +659,57 @@ export const menuSections = [
     ],
   }
 ]
+
+export const businessJson = {
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "name": "Wolfs Superior Sandwiches",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4417 Pennell Rd.",
+    "addressLocality": "Aston",
+    "addressRegion": "PA",
+    "postalCode": "19104"
+  },
+  "telePhone": "484-487-3970",
+  "image": "/static/logo-vertical.png",
+  "url": "http://www.wolfssuperiorsandwiches.com",
+  "paymentAccepted": [ "cash", "check", "credit card" ],
+  "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 11:00-23:00",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+      ],
+      "opens": "11:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Friday",
+        "Saturday",
+      ],
+      "opens": "11:00",
+      "closes": "23:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday",
+      ],
+      "opens": "11:00",
+      "closes": "21:00"
+    }
+  ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "39.857610",
+    "longitude": "-75.427063"
+  },
+  "priceRange":"$"
+}

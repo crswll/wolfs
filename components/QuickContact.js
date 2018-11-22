@@ -1,12 +1,15 @@
 import React from 'react'
-import { street, city, state, postal, hours, phone } from '../wolfs'
+import FacebookLogo from './Facebook'
+import TwitterLogo from './Twitter'
+import { street, city, state, postal, hours, phone, networks } from '../wolfs'
 
 const QuickContact = ({
   className: parentClassNames,
   ...props,
 }) => {
+  const [ fb, twitter ] = networks
   return (
-    <div className={`${parentClassNames || ''} flex flex-col wide:flex-row justify-center text-center text-darker text-scale-1 font-400 items-center`} {...props}>
+    <div className={`${parentClassNames || ''} text-center text-darker text-scale-0 font-400 items-center`} {...props}>
       <div>
         {street}, {city}, {state} {postal}
       </div>
@@ -17,8 +20,16 @@ const QuickContact = ({
           </li>
         )}
       </ul>
-      <div className="mt-2 text-scale-3 narrow:text-scale-1 wide:mt-0 font-600">
+      <div className="my-1 text-scale-2 narrow:text-scale-3 flex justify-center items-center">
         {phone}
+      </div>
+      <div className="flex justify-center">
+        <a href={fb.url} className="text-neutral hover:text-facebook rounded-full bg-lighter w-50 h-50 flex items-center justify-center mr-1">
+          <FacebookLogo className="w-25 h-25 fill-current" title={fb.text} />
+        </a>
+        <a href={twitter.url} className="text-neutral hover:text-twitter rounded-full bg-lighter w-50 h-50 flex items-center justify-center">
+          <TwitterLogo className="w-25 h-25 fill-current" title={twitter.text} />
+        </a>
       </div>
     </div>
   )

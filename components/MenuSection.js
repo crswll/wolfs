@@ -1,8 +1,9 @@
 import React from 'react'
 import classnames from 'classnames'
-import { toUSD } from '../helpers'
+import { kebab } from '../helpers'
 import MenuSectionTitle from './MenuSectionTitle'
 import SimpleMenuItem from './SimpleMenuItem'
+import Up from './Up'
 
 const MenuSection = ({
   className: parentClassNames,
@@ -15,12 +16,18 @@ const MenuSection = ({
   ...props,
 }) => {
   return (
-    <section className={classnames(parentClassNames)} aria-label={title}>
+    <section className={classnames(parentClassNames)} aria-label={title} {...props}>
       <MenuSectionTitle
-        className="-mx-2 pl-2 font-600"
+        className="-mx-2 pl-2 font-600 flex items-center"
         headerLevel={headerLevel}
       >
-        {title}
+        <span>{title}</span>
+        <a className="ml-2 block text-light p-1 bg-lighter rounded-full" href={`#menu`}>
+          <Up
+            className="w-25 h-25 fill-current block"
+            title="Back to Top"
+          />
+        </a>
       </MenuSectionTitle>
 
       {description && (
