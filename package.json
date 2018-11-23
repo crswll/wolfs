@@ -7,8 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "rm -rf .next out && next build && next export",
-    "deploy": "yarn export && now out"
+    "export": "next export"
   },
   "author": "",
   "license": "ISC",
