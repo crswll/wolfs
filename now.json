@@ -1,7 +1,7 @@
 {
   "name": "wolfs",
-  "alias": "wolfssuperiorsandwiches.com",
-  "type": "static",
   "version": 2,
-  "public": false
+  "alias": "wolfssuperiorsandwiches.com",
+  "public": false,
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
 }
