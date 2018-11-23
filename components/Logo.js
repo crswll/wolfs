@@ -1,4 +1,5 @@
 import { name } from '../wolfs'
+import { getPath } from '../helpers'
 
 const Logo = ({
   title,
@@ -10,7 +11,7 @@ const Logo = ({
       <div className="flex items-center">
         <img
           className="w-full"
-          src="/static/wolfie.png"
+          src={getPath('/static/wolfie.png')}
           alt=""
         />
         <span className="visually-hidden">{name}</span>
