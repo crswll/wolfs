@@ -3,7 +3,6 @@ import Head from 'next/head'
 
 import Container from '../components/Container'
 import Logo from '../components/Logo'
-import MenuButton from '../components/MenuButton'
 import MenuSection from '../components/MenuSection'
 import QuickContact from '../components/QuickContact'
 import JsonLd from '../components/JsonLd'
@@ -29,10 +28,6 @@ const Home = () => (
         className="w-250 mx-auto wide:w-300 -mt-2"
       />
     </Container>
-    <MenuButton
-      onClick={() => this.setMenuVisibility(!menuIsVisible)}
-      hidden
-    />
     <Container className="py-2">
       <QuickContact />
     </Container>

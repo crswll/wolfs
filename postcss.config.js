@@ -12,18 +12,30 @@ if (process.env.NODE_ENV === 'production') {
     }
   }
 
-  plugins.push(require('@fullhuman/postcss-purgecss')({
-    content: [
-      './pages/**/*.js',
-      './components/**/*.js',
-    ],
-    extractors: [
-      {
-        extractor: TailwindExtractor,
-        extensions: ["js"]
-      }
-    ]
-  }))
+  plugins.push(
+    require('@fullhuman/postcss-purgecss')({
+      content: [
+        './pages/**/*.js',
+        './components/**/*.js',
+      ],
+      extractors: [
+        {
+          extractor: TailwindExtractor,
+          extensions: ["js"]
+        }
+      ]
+    })
+  )
+
+  plugins.push(
+    require('cssnano')({
+      preset: ['default', {
+        discardComments: {
+          removeAll: true
+        },
+      }],
+    })
+  )
 }
 
 module.exports = {

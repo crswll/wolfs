@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "export": "rm -rf .next out && next build && next export",
-    "deploy": "yarn export && cd out && now"
+    "deploy": "yarn export && cp now.json out/now.json && cd out && now"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "@zeit/next-css": "^1.0.1",
     "classnames": "^2.2.6",
     "css-loader": "^1.0.1",
+    "cssnano": "^4.1.7",
     "next": "^7.0.2",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.4.0",
