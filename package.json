@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "export": "rm -rf .next out && next build && next export",
-    "deploy": "yarn export && cp now.json out/now.json && cd out && now"
+    "deploy": "yarn export && now out"
   },
   "author": "",
   "license": "ISC",
