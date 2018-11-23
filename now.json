@@ -3,5 +3,7 @@
   "version": 2,
   "alias": "wolfssuperiorsandwiches.com",
   "public": false,
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
 }

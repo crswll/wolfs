@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "now-build": "rm -rf .next out && next build && next export -o dist"
+    "now-build": "next build && LIVE=true next export -o dist"
   },
   "author": "",
   "license": "ISC",
