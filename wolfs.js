@@ -2,7 +2,8 @@ import { getPath } from './helpers'
 
 export const domain = 'https://wolfssuperiorsandwiches.com'
 export const name = "Wolf's Superior Sandwiches"
-export const phone = "484-487-3970"
+export const phone = "484-480-3181"
+export const phone2 = "484-480-3775"
 export const street = "4417 Pennell Rd."
 export const city = "Aston"
 export const state = "PA"

@@ -1,7 +1,17 @@
 import React from 'react'
 import FacebookLogo from './Facebook'
 import TwitterLogo from './Twitter'
-import { name, street, city, state, postal, hours, phone, networks } from '../wolfs'
+import {
+  city,
+  hours,
+  name,
+  networks,
+  phone,
+  phone2,
+  postal,
+  state,
+  street,
+} from '../wolfs'
 
 const QuickContact = ({
   className: parentClassNames,
@@ -21,8 +31,8 @@ const QuickContact = ({
           </li>
         )}
       </ul>
-      <div className="my-1 text-scale-2 narrow:text-scale-3 flex justify-center items-center">
-        {phone}
+      <div className="my-1 mb-2 text-scale-2 narrow:text-scale-3 flex justify-center items-center">
+        {phone} / {phone2}
       </div>
       <div className="flex justify-center">
         <a href={fb.url} className="text-neutral hover:text-facebook rounded-full bg-lighter w-50 h-50 flex items-center justify-center mr-1">
