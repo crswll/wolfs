@@ -31,6 +31,7 @@ export const tagNames = {
   'SR': 'On A Seeded Roll',
   'GF': 'Available Gluten Free',
   'W': 'White',
+  'VEG': 'Vegetarian',
 }
 
 export const menuSectionOrder = [
@@ -64,7 +65,7 @@ export const menuSections = [
         "name": "The Ashley",
         "description": "panko breaded mozzarella, roma tomatoes, basil aioli, arugula, balsamic reduction",
         "price": 9,
-        "tags": ["SR"],
+        "tags": ["SR", "VEG"],
       },
       {
         "name": "Pollo Loco",
@@ -249,6 +250,7 @@ export const menuSections = [
       {
         "name": "Upside Down",
         "description": "mozzarella, provolone, pecorino with sauce on top",
+        "tags": ["VEG"],
         "price": [
           { "label": "Sm", "price": 10 },
           { "label": "Lg", "price": 14 },
@@ -367,6 +369,7 @@ export const menuSections = [
       {
         "name": "French Fries",
         "price": 4,
+        "tags": ["VEG"],
       },
       {
         "name": "Chorizo Cheddar Empanadas",
@@ -375,30 +378,40 @@ export const menuSections = [
       {
         "name": "BBQ Cheddar Ranch Fries",
         "price": 5.5,
+        "tags": ["VEG"],
       },
       {
         "name": "Mozzarella sticks",
         "price": 5.5,
+        "tags": ["VEG"],
       },
       {
         "name": "Chili Cheese Fries",
         "price": 7,
       },
       {
-        "name": "Smoked gouda mac and cheese bites",
+        "name": "Cheese Fries",
         "price": 5,
+        "tags": ["VEG"],
+      },
+      {
+        "name": "Smoked Gouda Mac and Cheese Bites",
+        "price": 5,
+        "tags": ["VEG"],
       },
       {
         "name": "Cheesesteak Egg Rolls",
         "price": 8,
       },
       {
-        "name": "Fried pickles",
+        "name": "Fried Pickles",
         "price": 5,
+        "tags": ["VEG"],
       },
       {
         "name": "Onion rings",
         "price": 5,
+        "tags": ["VEG"],
       },
     ],
   },
@@ -412,30 +425,37 @@ export const menuSections = [
       {
         "name": "Cucumber Apple Slaw	Potato Salad",
         "price": 2,
+        "tags": ["VEG"],
       },
       {
         "name": "Macaroni Salad",
         "price": 2,
+        "tags": ["VEG"],
       },
       {
         "name": "Artichoke Bruschetta",
         "price": 2,
+        "tags": ["VEG"],
       },
       {
         "name": "Tomato Salad",
         "price": 2,
+        "tags": ["VEG"],
       },
       {
         "name": "Purple Cabbage Slaw",
         "price": 2,
+        "tags": ["VEG"],
       },
       {
         "name": "Balsamic Onion Jam",
         "price": 2,
+        "tags": ["VEG"],
       },
       {
         "name": "Bruschetta",
         "price": 2,
+        "tags": ["VEG"],
       },
     ]
   },
@@ -478,26 +498,31 @@ export const menuSections = [
         "name": "Caesar",
         "description": "romaine, parmesan, croutons, shaved parmesan, grape tomatoes, creamy caesar dressing",
         "price": 7,
+        "tags": ["VEG"],
       },
       {
         "name": "House",
         "description": "spring mix, grape tomatoes, cucumber, red onion, balsamic vinaigrette, croutons",
         "price": 7,
+        "tags": ["VEG"],
       },
       {
         "name": "Taco",
         "description": "romaine, tomato, avocado, cheddar cheese, salsa, seasoned beef, tortilla strips, chipotle ranch",
         "price": 9,
+        "tags": ["VEG"],
       },
       {
         "name": "The Winterfell",
         "description": "arugula, dried cherries, bleu cheese crumbles, red onion, candied walnuts, champagne vinaigrette",
         "price": 9,
+        "tags": ["VEG"],
       },
       {
         "name": "Caprese",
         "description": "sliced tomato, panko breaded mozzarella, pesto sauce, arugula, red wine vinaigrette, balsamic reduction",
         "price": 9,
+        "tags": ["VEG"],
       },
       {
         "name": "Aston Spin",
@@ -524,7 +549,7 @@ export const menuSections = [
           { "label": "Pint", "price": 8 },
           { "label": "Quart", "price": 12 },
         ],
-        "tags": ["GF"],
+        "tags": ["GF", "VEG"],
       },
       {
         "name": "Baked Potato",
@@ -533,7 +558,7 @@ export const menuSections = [
           { "label": "Pint", "price": 8 },
           { "label": "Quart", "price": 12 },
         ],
-        "tags": ["GF"],
+        "tags": ["GF", "VEG"],
       },
       {
         "name": "Roasted Tomato & Carrot",
@@ -542,7 +567,7 @@ export const menuSections = [
           { "label": "Pint", "price": 8 },
           { "label": "Quart", "price": 12 },
         ],
-        "tags": ["GF"],
+        "tags": ["GF", "VEG"],
       },
     ]
   },
@@ -618,6 +643,7 @@ export const menuSections = [
       {
         "name": "Cheese Hoagie",
         "price": 8,
+        "tags": ["VEG"],
       },
       {
         "name": "Ham & Cheese",
