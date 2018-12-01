@@ -14,6 +14,8 @@ const colors = {
   'light': 'var(--light)',
   'lighter': 'var(--lighter)',
   'lightest': 'var(--lightest)',
+  'veg-light': 'hsl(92, 100%, 95%)',
+  'veg-dark': 'hsl(92, 100%, 22%)',
   'facebook': '#3b5998',
   'twitter': '#1da1f2',
 }
