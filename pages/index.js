@@ -7,7 +7,7 @@ import QuickContact from '../components/QuickContact'
 import JsonLd from '../components/JsonLd'
 
 import { name, menuSections, menuSectionOrder, businessJson } from '../wolfs'
-import { kebab } from '../helpers'
+import { kebab, getPath, isLive } from '../helpers'
 import "../wolfs.css"
 
 // html, body, h1, h2, h3, h4, h5, h6
@@ -19,6 +19,7 @@ const Home = () => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
       <meta name="format-detection" content="telephone=no" />
       <meta name="description" content="Wolf's Superior Sandwiches offers a tricked out American sandwich shop menu with the classics you know and love, and specialty items you will only find here." />
+      <link rel="icon" href={getPath('/static/favicon.ico')} />
     </Head>
     <div className="bg-darkest h-25"></div>
     <Container>
@@ -78,6 +79,20 @@ const Home = () => (
     </footer>
 
     <JsonLd data={businessJson} />
+
+    {isLive && (
+      <React.Fragment>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131070716-1"></script>
+        <script
+          dangerouslySetInnerHTML={{__html: `
+            window.dataLayer = window.dataLayer || []
+            function gtag(){ dataLayer.push(arguments) }
+            gtag('js', new Date())
+            gtag('config', 'UA-131070716-1')
+          `}}
+        />
+      </React.Fragment>
+    )}
   </React.Fragment>
 )
 
