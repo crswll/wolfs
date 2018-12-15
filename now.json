@@ -2,8 +2,7 @@
   "name": "wolfs",
   "version": 2,
   "alias": [
-    "wolfssuperiorsandwiches.com",
-    "www.wolfssuperiorsandwiches.com"
+    "wolfssuperiorsandwiches.com"
   ],
   "public": false,
   "builds": [
