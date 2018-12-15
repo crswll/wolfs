@@ -1,9 +1,9 @@
 const withCSS = require('@zeit/next-css')
+const isLive = process.env.LIVE === 'true'
 
 module.exports = withCSS({
   publicRuntimeConfig: {
-    publicUrl: process.env.LIVE === 'true'
-      ? 'https://wolfssuperiorsandwiches.com'
-      : '',
+    publicUrl: isLive ? 'https://wolfssuperiorsandwiches.com' : '',
+    isLive,
   },
 })
