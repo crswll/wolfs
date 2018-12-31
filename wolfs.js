@@ -169,6 +169,12 @@ export const menuSections = [
         "price": 9.5,
         "tags": [],
       },
+      {
+        "name": "The Vegan Jawn",
+        "description": "banana peppers, oil, balsamic, cucumbers, onions, tomato, arugula",
+        "price": 8.5,
+        "tags": ["VEGAN"],
+      },
     ],
   },
   {
@@ -421,6 +427,7 @@ export const menuSections = [
       {
         "name": "Pasta Salad",
         "price": 2,
+        "tags": ["VEG"],
       },
       {
         "name": "Cucumber Apple Slaw	Potato Salad",

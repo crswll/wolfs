@@ -17,13 +17,10 @@ const Home = () => (
     <Head>
       <title>Wolf's Superior Sandwiches</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
-      <meta name="format-detection" content="telephone=no" />
       <meta name="description" content="Wolf's Superior Sandwiches offers a tricked out American sandwich shop menu with the classics you know and love, and specialty items you will only find here." />
       <link rel="icon" href={getPath('/static/favicon.ico')} />
       <link rel="apple-touch-icon" href={getPath('/static/apple-touch-icon.png')} />
-      <meta name="apple-mobile-web-app-title" content="Wolf's Sandwiches" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <meta name="apple-mobile-web-app-title" content="Wolf's" />
     </Head>
     <div className="bg-darkest h-25"></div>
     <Container>
@@ -78,6 +75,8 @@ const Home = () => (
             <li><strong>GF</strong> = Available Gluten Free</li>
             <li><strong>SR</strong> = Served on Seeded Roll</li>
             <li><strong>W</strong> = White Pizza</li>
+            <li><strong>VEG</strong> = Vegetarian</li>
+            <li><strong>VEGAN</strong> = Vegan</li>
           </ul>
         </Container>
     </footer>
