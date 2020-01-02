@@ -58,115 +58,115 @@ export const menuSections = [
       {
         "name": "The Gritty",
         "description": "a mix of chopped steak and habbersett scrapple, caramelized onions, spicy ketchup, creamy cheese sauce",
-        "price": 10,
+        "price": 11,
         "tags": [],
       },
       {
         "name": "The Ashley",
         "description": "panko breaded mozzarella, roma tomatoes, basil aioli, arugula, balsamic reduction",
-        "price": 9,
+        "price": 10,
         "tags": ["SR", "VEG"],
       },
       {
         "name": "Pollo Loco",
         "description": "pulled chicken, chimichurri, cheddar, jalapenos, pickled onions, cilantro",
-        "price": 9,
+        "price": 10,
         "tags": ["GF"],
       },
       {
         "name": "The Pacino",
         "description": "grilled chicken breast, hot pepper spread, long hots, roasted Roma tomatoes, basil aioli, arugula, mozzarella and red pepper flakes",
-        "price": 9.5,
+        "price": 10.5,
         "tags": ["GF"],
       },
       {
         "name": "The De Niro",
         "description": "chicken cutlet, roasted peppers, prosciutto di Parma, pesto mayo, arugula, red onion, Aged provolone, balsamic reduction",
-        "price": 9.5,
+        "price": 10.5,
         "tags": ["SR"],
       },
       {
         "name": "The Liotta",
         "description": "Italian sausage, peppers, onions, roasted garlic aioli and fresh mozzarella, oven toasted",
-        "price": 9.5,
+        "price": 10.5,
         "tags": ["SR", "GF"],
       },
       {
         "name": "The Pesci",
         "description": "prosciutto di parma, sopressata, hot capicola, Genoa salami, sliced Roma tomatoes, red onion, aged sharp provolone, red wine vinegar, olive oil, red pepper flakes",
-        "price": 9.5,
+        "price": 10.5,
         "tags": ['GF'],
       },
       {
         "name": "The Pickle Rick",
         "description": "bourbon bbq brisket, fried pickles, cooper sharp, garlic aioli",
-        "price": 9.5,
+        "price": 10.5,
         "tags": ["SR", "GF"],
       },
       {
         "name": "Death By Swine",
         "description": "bourbon bbq pork belly, cheddar cheese, pulled pork, smoked gouda cheese sauce, chipotle ranch, spicy pickles, bacon, onion rings and 2 sunny up eggs ",
-        "price": 10.5,
+        "price": 11.5,
         "tags": ["SR", "GF"],
       },
       {
         "name": "The So-Cal",
         "description": "turkey, bacon, avocado, tomato, arugula, mayo, smoked cheddar",
-        "price": 9,
+        "price": 10,
         "tags": ["GF"],
       },
       {
         "name": "The Big Memphis",
         "description": "bbq brisket, smoked gouda mac n chez, jalapenos, onion rings, bourbon bbq sauce",
-        "price": 9.5,
+        "price": 10.5,
         "tags": [],
       },
       {
         "name": "The NOLA",
         "description": "Andouille sausage, creole mayo, pickles, red onion",
-        "price": 9,
+        "price": 10,
         "tags": ["GF"],
       },
       {
         "name": "The Chi-Town Beef",
         "description": "sliced beef, giardiniera (assorted pickled vegetables and chilies) beef jus and provolone",
-        "price": 9,
+        "price": 10,
         "tags": ["GF", "SR"],
       },
       {
         "name": "The Backyard BBQ",
         "description": "buttermilk fried chicken tenders, iceberg lettuce, sliced tomato, black pepper pork belly, avocado and deviled egg mayo",
-        "price": 9.5,
+        "price": 10.5,
         "tags": ["GF"],
       },
       {
         "name": "The Cozumel",
         "description": "citrus braised pork, salsa verde, salsa roja, red onion, queso fresco, cilantro",
-        "price": 9,
+        "price": 10,
         "tags": ["GF"],
       },
       {
         "name": "The Corey Matthew's",
         "description": "ham, cooper sharp, iceberg lettuce, tomato, yellow mustard, potato chips",
-        "price": 8.5,
+        "price": 9.5,
         "tags": ["GF"],
       },
       {
         "name": "The Nor-Cal",
         "description": "roast beef, artichoke bruschetta, roasted garlic mayo, swiss, roma tomatoes, red onion, fresh basil",
-        "price": 9,
+        "price": 10,
         "tags": ["GF"],
       },
       {
         "name": "The Big Cubano",
         "description": "sliced ham, pulled pork, bacon, salami, swiss, mustard, lettuce, tomato",
-        "price": 10,
+        "price": 11,
         "tags": ["GF"],
       },
       {
         "name": "The Thanksgiving Jawn",
         "description": "sliced Turkey, stuffing, cranberry, mayo",
-        "price": 9.5,
+        "price": 10.5,
         "tags": [],
       },
     ],
@@ -178,37 +178,37 @@ export const menuSections = [
       {
         "name": "The G.O.A.T.",
         "description": "baby arugula, balsamic onion jam, goat cheese",
-        "price": 10,
+        "price": 11,
         "tags": ['GF']
       },
       {
         "name": "The West Coast BLT",
         "description": "iceberg, tomato, avocado, crispy pork belly, roasted garlic mayo",
-        "price": 12,
+        "price": 13,
         "tags": ['GF']
       },
       {
         "name": "The Vesuvius",
         "description": "arugula, prosciutto di parma, balsamic reduction, long hots, aged provolone",
-        price: 10,
+        price: 11,
         "tags": ['GF']
       },
       {
         "name": "The 'merica",
         "description": "lettuce, tomato, american cheese, bacon topped with a hot dog, onion rings and bbq sauce",
-        price: 12,
+        price: 13,
         "tags": [],
       },
       {
         "name": "The Sonny",
         "description": "(only for big mouths) lettuce, tomato, red onion, american cheese, ham, capocolla, sopressata, salami, hot pepper jam",
-        price: 12,
+        price: 13,
         "tags": ['GF']
       },
       {
         "name": "Mac n Chez Burger",
         "description": "smoked gouda mac n cheese, crispy bacon, chipotle ranch",
-        price: 10,
+        price: 11,
         "tags": []
       }
     ],
@@ -220,27 +220,27 @@ export const menuSections = [
       {
         "name": "The Chronic",
         "description": "honey bbq pulled pork, bacon, cheese sauce, onion rings, banana peppers, sunny up egg",
-        "price": 9
+        "price": 10
       },
       {
         "name": "Cheesesteak Dog",
         "description": "chopped steak, cooper sharp, caramelized onions, sriracha ketchup",
-        "price": 9
+        "price": 10
       },
       {
         "name": "Chili Chez",
         "description": "Howlin Chili, Cheddar Cheese, Pickled Jalapenos, Onion Ring",
-        "price": 8
+        "price": 9
       },
       {
         "name": "The Chi-Town",
         "description": "mustard, onions, relish, pickles, tomato, jalapeno",
-        "price": 7
+        "price": 8
       },
       {
         "name": "The MexiCali",
         "description": "bacon, avocado, onion, chipotle ranch, salsa",
-        "price": 7
+        "price": 8
       }
     ],
   },
@@ -252,16 +252,16 @@ export const menuSections = [
         "description": "mozzarella, provolone, pecorino with sauce on top",
         "tags": ["VEG"],
         "price": [
-          { "label": "Sm", "price": 10 },
-          { "label": "Lg", "price": 14 },
+          { "label": "Sm", "price": 11 },
+          { "label": "Lg", "price": 15 },
         ],
       },
       {
         "name": "Delco Scrappy",
         "description": "scrapple, caramelized onions, sriracha ketchup, cheese sauce",
         "price": [
-          { "label": "Sm", "price": 13.5 },
-          { "label": "Lg", "price": 17.5 },
+          { "label": "Sm", "price": 14.5 },
+          { "label": "Lg", "price": 18.5 },
         ],
         "tags": ["W"],
       },
@@ -269,24 +269,24 @@ export const menuSections = [
         "name": "Spicy Pina",
         "description": "ham, pineapple, banana pepper, hot sauce",
         "price": [
-          { "label": "Sm", "price": 13.5 },
-          { "label": "Lg", "price": 17.5 },
+          { "label": "Sm", "price": 14.5 },
+          { "label": "Lg", "price": 18.5 },
         ],
       },
       {
         "name": "Saucy Taco",
         "description": "seasoned beef, mozzarella, cheddar, red onion, salsa",
         "price": [
-          { "label": "Sm", "price": 14 },
-          { "label": "Lg", "price": 18 },
+          { "label": "Sm", "price": 15 },
+          { "label": "Lg", "price": 19 },
         ],
       },
       {
         "name": "Philly Philly",
         "description": "chopped steak, caramelized onion, cheese sauce, sriracha ketchup",
         "price": [
-          { "label": "Sm", "price": 13.5 },
-          { "label": "Lg", "price": 17.5 },
+          { "label": "Sm", "price": 14.5 },
+          { "label": "Lg", "price": 18.5 },
         ],
       },
       {
@@ -302,8 +302,8 @@ export const menuSections = [
         "name": "Amarillo Smokehouse",
         "description": "pulled brisket, onion rings, jalapeno, smoked cheddar, bourbon bbq",
         "price": [
-          { "label": "Sm", "price": 15 },
-          { "label": "Lg", "price": 19 },
+          { "label": "Sm", "price": 16 },
+          { "label": "Lg", "price": 20 },
         ],
         "tags": ["W"],
       },
@@ -311,8 +311,8 @@ export const menuSections = [
         "name": "Anti-pie-sto",
         "description": "prosciutto di Parma, soppressata, hot capaccola, Genoa salami, pepperoni, black olives, roma tomato, red onion, arugula, shaved parmesan, oil, vinegar, balsamic reduction",
         "price": [
-          { "label": "Sm", "price": 16 },
-          { "label": "Lg", "price": 20 },
+          { "label": "Sm", "price": 17 },
+          { "label": "Lg", "price": 21 },
         ],
       },
     ]
@@ -324,37 +324,37 @@ export const menuSections = [
       {
         "name": "Carnitas",
         "description": "citrus braised pork, onion, queso fresco, salsa roja, salsa verde, cilantro",
-        "price": 8,
+        "price": 9,
         "tags": ['GF'],
       },
       {
         "name": "Pollo",
         "description": "pulled chicken, pickled red onion, queso fresco, chimichurri, cilantro",
-        "price": 8,
+        "price": 9,
         "tags": ['GF'],
       },
       {
         "name": "Baja",
         "description": "beer battered cod, mango salsa, lettuce, chipotle ranch, cilantro",
-        "price": 9,
+        "price": 10,
         "tags": [],
       },
       {
         "name": "Brisket",
         "description": "bbq brisket, smoked gouda cheese sauce, purple cabbage slaw, onions",
-        "price": 9,
+        "price": 10,
         "tags": ['GF'],
       },
       {
         "name": "Gringo",
         "description": "ground beef, lettuce, salsa, sour cream, cheddar",
-        "price": 8,
+        "price": 9,
         "tags": [],
       },
       {
         "name": "Pork Belly",
         "description": "spice rubbed pork belly, arugula, cucumber apple slaw, cilantro",
-        "price": 9,
+        "price": 10,
         "tags": ['GF'],
       },
     ]
@@ -576,11 +576,11 @@ export const menuSections = [
     "items": [
       {
         "name": "Small (13 inch)",
-        "price": 10,
+        "price": 11,
       },
       {
         "name": "Large (16 inch)",
-        "price": 14,
+        "price": 15,
       },
       {
         "name": "Meat Toppings",
@@ -614,40 +614,40 @@ export const menuSections = [
     "items": [
       {
         "name": "Italian",
-        "price": 8,
+        "price": 9,
       },
       {
         "name": "Turkey & Cheese",
-        "price": 8,
+        "price": 9,
       },
       {
         "name": "Roast Beef",
-        "price": 8,
+        "price": 9,
       },
       {
         "name": "Tuna Salad",
-        "price": 8,
+        "price": 9,
       },
       {
         "name": "Club Sandwich",
-        "price": 7.5,
+        "price": 8.5,
       },
       {
         "name": "Chicken Salad",
-        "price": 8,
+        "price": 9,
       },
       {
         "name": "BLT",
-        "price": 7.5,
+        "price": 8.5,
       },
       {
         "name": "Cheese Hoagie",
-        "price": 8,
+        "price": 9,
         "tags": ["VEG"],
       },
       {
         "name": "Ham & Cheese",
-        "price": 8,
+        "price": 9,
       },
     ],
   },
@@ -656,35 +656,35 @@ export const menuSections = [
     "items": [
       {
         "name": "Cheesesteak",
-        "price": 9,
+        "price": 10,
       },
       {
         "name": "Chicken Steak",
-        "price": 9,
+        "price": 10,
       },
       {
         "name": "Pizzasteak",
-        "price": 9,
+        "price": 10,
       },
       {
         "name": "Cheeseburger",
-        "price": 9,
+        "price": 10,
       },
       {
         "name": "Grilled Cheese",
-        "price": 7,
+        "price": 8,
       },
       {
         "name": "Buffalo Chicken Steak",
-        "price": 9,
+        "price": 10,
       },
       {
         "name": "Grilled Ham & Cheese",
-        "price": 7.5,
+        "price": 8.5,
       },
       {
         "name": "Hamburger",
-        "price": 8,
+        "price": 9,
       },
     ],
   }
