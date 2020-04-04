@@ -1,6 +1,3 @@
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig()
-
 export const toUSD = n => n.toLocaleString
   ? n.toLocaleString('en-US', {
       style: 'currency',

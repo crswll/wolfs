@@ -32,6 +32,7 @@ const Home = () => (
         className="mx-auto -mt-2"
       />
     </Container>
+
     <Container className="py-2">
       <QuickContact />
     </Container>
