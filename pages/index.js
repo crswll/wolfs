@@ -6,9 +6,12 @@ import Logo from '../components/Logo'
 import MenuSection from '../components/MenuSection'
 import QuickContact from '../components/QuickContact'
 import JsonLd from '../components/JsonLd'
+import FacebookLogo from '../components/Facebook'
 
-import { name, menuSections, menuSectionOrder, businessJson } from '../wolfs'
+import { name, menuSections, menuSectionOrder, businessJson, networks } from '../wolfs'
 import { kebab, getPath, isLive } from '../helpers'
+
+const [ fb ] = networks
 
 // html, body, h1, h2, h3, h4, h5, h6
 
@@ -25,32 +28,34 @@ const Home = () => (
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     </Head>
-    <div className="bg-darkest" style={{ height: 25 }}></div>
-    <Container>
-      <Logo
-        title={name}
-        style={{ width: 250 }}
-        className="mx-auto -mt-2"
-      />
+    <div className="bg-lightest" style={{ height: 12 }}></div>
+
+    <Container className="relative" style={{ width: 250 }}>
+      <Logo title={name} className="w-full mx-auto -mt-2" />
+      <div className="absolute bottom-0 right-0" style={{ width: 50, height: 50 }}>
+        <a href={fb.url} className="flex items-center justify-center w-full h-full mr-1 rounded-full bg-facebook" style={{ color: '#fff' }}>
+          <FacebookLogo style={{ width: 25, height: 25 }} className="fill-current" title={fb.text} />
+        </a>
+      </div>
     </Container>
 
     <Container className="py-2">
       <QuickContact />
     </Container>
 
-    <div className="my-3 bg-lighter">
-      <Container className="p-3 text-scale-2">
+    <div className="my-3 text-darker">
+      <Container className="px-3 text-scale-2">
         <p>Wolf's Superior Sandwiches offers a tricked out American sandwich shop menu with the classics you know and love, and specialty items you will only find here.</p>
       </Container>
     </div>
 
     <Container className="px-3" id="menu">
-      <h1 className="mb-2 text-scale-5">Menu</h1>
-      <ul className="mb-2 leading-loose list-reset text-scale-0 narrow:text-scale-1 md:leading-normal">
+      <h1 className="mb-2 text-scale-5 text-darkest">Menu</h1>
+      <ul className="mb-2 leading-loose list-reset text-scale-0 text-dark narrow:text-scale-1 md:leading-normal">
         {menuSectionOrder.map(section =>
           <li key={section} className="inline-block mr-1 after:comma">
             <a
-              className="no-underline text-primary-darker"
+              className="no-underline text-primary"
               href={`#${kebab(section)}`}
               children={section}
             />
@@ -76,7 +81,7 @@ const Home = () => (
       )}
     </Container>
 
-    <footer className="bg-lighter">
+    <footer className="bg-lightest text-darker">
         <Container className="p-3 py-2 leading-loose text-scale-n1">
           <p>Consuming raw or undercooked meats, poultry, seafood, shellfish or egg may increase your risk of foodborne illness.</p>
           <ul className="mt-2 list-reset">

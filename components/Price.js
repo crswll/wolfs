@@ -11,10 +11,10 @@ function getType (value) {
   return type;
 }
 
-const single = price => <span className="text-primary-darker font-600">{toUSD(price)}</span>
+const single = price => <span className="text-primary font-600">{toUSD(price)}</span>
 
 const multiple = pricing => (
-  <ul className="list-reset flex flex-col text-scale-1" aria-label="Pricing">
+  <ul className="flex flex-col list-reset text-scale-1" aria-label="Pricing">
     {pricing.map(({ label, price }) =>
       <li key={label} className="mr-1">
         {single(price)} <span className="text-darker">{label}</span>
@@ -23,7 +23,7 @@ const multiple = pricing => (
   </ul>
 )
 
-const literal = price => <span className="text-primary-darker font-600">{price}</span>
+const literal = price => <span className="text-primary font-600">{price}</span>
 
 
 const switchPriceRender = price => {
