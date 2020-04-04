@@ -1,7 +1,9 @@
 :root {
-  --primary-lighter: hsl(358, 70%, 95%);
-  --primary: hsl(358, 83%, 53%);
-  --primary-darker: hsl(358, 83%, 30%);
+  --primary: hsl(358, 100%, 23%);
+
+  --veg-dark: hsl(92, 100%, 22%);
+  --veg-light: hsl(92, 100%, 95%);
+
   --darkest: hsl(358, 0%, 0%);
   --darker: hsl(358, 0%, 20%);
   --dark: hsl(358, 0%, 40%);
@@ -9,4 +11,21 @@
   --light: hsl(358, 0%, 75%);
   --lighter: hsl(358, 0%, 95%);
   --lightest: hsl(358, 0%, 98%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: hsl(358, 100%, 65%);
+
+    --veg-dark: hsl(92, 100%, 95%);
+    --veg-light: hsl(92, 100%, 22%);
+
+    --darkest: hsl(358, 0%, 98%);
+    --darker: hsl(358, 0%, 95%);
+    --dark: hsl(358, 0%, 75%);
+    --neutral: hsl(358, 0%, 70%);
+    --light: hsl(358, 0%, 40%);
+    --lighter: hsl(358, 0%, 20%);
+    --lightest: hsl(358, 0%, 0%);
+  }
 }

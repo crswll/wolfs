@@ -7,8 +7,6 @@ module.exports = {
     colors: {
       'transparent': 'transparent',
       'primary': 'var(--primary)',
-      'primary-darker': 'var(--primary-darker)',
-      'primary-lighter': 'var(--primary-lighter)',
       'darkest': 'var(--darkest)',
       'darker': 'var(--darker)',
       'dark': 'var(--dark)',
@@ -16,8 +14,8 @@ module.exports = {
       'light': 'var(--light)',
       'lighter': 'var(--lighter)',
       'lightest': 'var(--lightest)',
-      'veg-light': 'hsl(92, 100%, 95%)',
-      'veg-dark': 'hsl(92, 100%, 22%)',
+      'veg-light': 'var(--veg-light)',
+      'veg-dark': 'var(--veg-dark)',
       'facebook': '#3b5998',
     },
 

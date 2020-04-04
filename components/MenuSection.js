@@ -18,14 +18,14 @@ const MenuSection = ({
   return (
     <section className={classnames(parentClassNames)} aria-label={title} {...props}>
       <MenuSectionTitle
-        className="-mx-2 pl-2 font-600 flex items-center"
+        className="flex items-center pl-2 -mx-2 font-600 text-darkest"
         headerLevel={headerLevel}
       >
         <span>{title}</span>
-        <a className="ml-2 block text-light p-1 bg-lighter rounded-full" href={`#menu`}>
+        <a className="block p-1 ml-2 rounded-full text-dark bg-lighter" href={`#menu`}>
           <Up
             style={{ width: 25, height: 25 }}
-            className="fill-current block"
+            className="block fill-current"
             title="Back to Top"
           />
         </a>
@@ -33,7 +33,7 @@ const MenuSection = ({
 
       {description && (
         <div
-          className="text-darker py-1"
+          className="py-1 text-darker"
           children={description}
         />
       )}
@@ -50,7 +50,7 @@ const MenuSection = ({
       </ul>
 
       {footnotes && (
-        <footer className="text-darker mt-2 pt-2">
+        <footer className="pt-2 mt-2 text-darker">
           {footnotes}
         </footer>
       )}

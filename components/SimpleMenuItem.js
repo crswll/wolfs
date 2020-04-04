@@ -20,8 +20,9 @@ const SimpleMenuItem = ({
             {tags.map(tag =>
               <abbr
                 key={tag}
-                className={classnames('text-scale-n1 text-dark bg-lighter mr-1 px-1 rounded-sm', {
-                  'bg-veg-light text-veg-dark': tag === 'VEG'
+                className={classnames('text-scale-n1 mr-1 px-1 rounded-sm', {
+                  'bg-veg-light text-veg-dark': tag === 'VEG',
+                  'text-dark': tag !== 'VEG'
                 })}
                 style={{ textDecoration: 'none' }}
                 children={tag}
