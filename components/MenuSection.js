@@ -22,7 +22,7 @@ const MenuSection = ({
         headerLevel={headerLevel}
       >
         <span>{title}</span>
-        <a className="block p-1 ml-2 rounded-full text-lightest bg-light" href={`#menu`}>
+        <a className="block p-1 ml-2 rounded-full text-dark bg-lighter" href={`#menu`}>
           <Up
             style={{ width: 25, height: 25 }}
             className="block fill-current"

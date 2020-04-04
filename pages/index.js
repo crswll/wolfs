@@ -28,7 +28,7 @@ const Home = () => (
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     </Head>
-    <div className="bg-lightest" style={{ height: 12 }}></div>
+    <div className="bg-lighter" style={{ height: 12 }}></div>
 
     <Container className="relative" style={{ width: 250 }}>
       <Logo title={name} className="w-full mx-auto -mt-2" />
@@ -81,7 +81,7 @@ const Home = () => (
       )}
     </Container>
 
-    <footer className="bg-lightest text-darker">
+    <footer className="bg-lighter text-darker">
         <Container className="p-3 py-2 leading-loose text-scale-n1">
           <p>Consuming raw or undercooked meats, poultry, seafood, shellfish or egg may increase your risk of foodborne illness.</p>
           <ul className="mt-2 list-reset">

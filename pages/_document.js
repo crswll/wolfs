@@ -8,7 +8,7 @@ export default class extends Document {
 
   render() {
     return (
-      <html lang="en-US" className="font-serif leading-normal bg-light">
+      <html lang="en-US" className="font-serif leading-normal bg-lighter">
         <Head />
         <body className="bg-lightest">
           <Main />
