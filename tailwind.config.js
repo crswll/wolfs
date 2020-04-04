@@ -11,7 +11,7 @@ module.exports = {
       'primary-lighter': 'var(--primary-lighter)',
       'darkest': 'var(--darkest)',
       'darker': 'var(--darker)',
-      'dark': 'var(--darke)',
+      'dark': 'var(--dark)',
       'neutral': 'var(--neutral)',
       'light': 'var(--light)',
       'lighter': 'var(--lighter)',
