@@ -17,18 +17,18 @@ const QuickContact = ({
   return (
     <div className={`${parentClassNames || ''} text-center text-darker text-scale-0 font-400 items-center`} {...props}>
       <h1 className="mb-1 leading-tight text-scale-5 text-darkest font-600">{name}</h1>
-      <div>
-        {street}, {city}, {state} {postal}
-      </div>
-      <ul className="list-reset wide:mx-2" aria-label="Shop Hours">
+      <ul className="my-1 list-reset" aria-label="Shop Hours">
         {hours.map(({ days, open, close }, index) =>
           <li key={index} className="inline mr-1">
             {days} {open}-{close} {index !== hours.length - 1 && '/' }
           </li>
         )}
       </ul>
-      <div className="flex items-center justify-center mt-1 text-scale-2 narrow:text-scale-3">
-        {phone} / {phone2}
+      <a href="https://goo.gl/maps/ydwfdbwVzCa3TkfbA" className="border-b border-lighter hover:border-light focus:border-light">
+        {street}, {city}, {state} {postal}
+      </a>
+      <div className="flex items-center justify-center mt-1 text-scale-1 narrow:text-scale-3">
+        <a className="mr-1 border-b border-lighter hover:border-light focus:border-light" href={`tel:${phone}`}>{phone}</a>/<a className="ml-1 border-b border-lighter hover:border-light focus:border-light" href={`tel:${phone2}`}>{phone2}</a>
       </div>
     </div>
   )
