@@ -8,7 +8,6 @@ import JsonLd from '../components/JsonLd'
 
 import { name, menuSections, menuSectionOrder, businessJson } from '../wolfs'
 import { kebab, getPath, isLive } from '../helpers'
-import "../wolfs.css"
 
 // html, body, h1, h2, h3, h4, h5, h6
 
@@ -19,19 +18,21 @@ const Home = () => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
       <meta name="format-detection" content="telephone=no" />
       <meta name="description" content="Wolf's Superior Sandwiches offers a tricked out American sandwich shop menu with the classics you know and love, and specialty items you will only find here." />
-      <link rel="icon" href={getPath('/static/favicon.ico')} />
-      <link rel="apple-touch-icon" href={getPath('/static/apple-touch-icon.png')} />
+      <link rel="icon" href={getPath('/favicon.ico')} />
+      <link rel="apple-touch-icon" href={getPath('/apple-touch-icon.png')} />
       <meta name="apple-mobile-web-app-title" content="Wolf's Sandwiches" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     </Head>
-    <div className="bg-darkest h-25"></div>
+    <div className="bg-darkest" style={{ height: 25 }}></div>
     <Container>
       <Logo
         title={name}
-        className="w-250 mx-auto wide:w-300 -mt-2"
+        style={{ width: 250 }}
+        className="mx-auto -mt-2"
       />
     </Container>
+
     <Container className="py-2">
       <QuickContact />
     </Container>

@@ -13,7 +13,7 @@ const MenuSection = ({
   headerLevel = 1,
   items,
   children,
-  ...props,
+  ...props
 }) => {
   return (
     <section className={classnames(parentClassNames)} aria-label={title} {...props}>
@@ -24,7 +24,8 @@ const MenuSection = ({
         <span>{title}</span>
         <a className="ml-2 block text-light p-1 bg-lighter rounded-full" href={`#menu`}>
           <Up
-            className="w-25 h-25 fill-current block"
+            style={{ width: 25, height: 25 }}
+            className="fill-current block"
             title="Back to Top"
           />
         </a>

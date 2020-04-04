@@ -7,7 +7,6 @@ const SimpleMenuItem = ({
   className: parentClassNames,
   item,
   headerLevel = 3,
-  ...props,
 }) => {
   const { name, description, price, tags } = item
   const HeaderTag = `h${headerLevel}`
@@ -21,9 +20,10 @@ const SimpleMenuItem = ({
             {tags.map(tag =>
               <abbr
                 key={tag}
-                className="text-scale-n1 text-dark bg-lighter mr-1 px-1 rounded-sm"
+                className={classnames('text-scale-n1 text-dark bg-lighter mr-1 px-1 rounded-sm', {
+                  'bg-veg-light text-veg-dark': tag === 'VEG'
+                })}
                 style={{ textDecoration: 'none' }}
-                data-tag={tag}
                 children={tag}
                 title={tagNames[tag]}
               />

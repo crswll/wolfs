@@ -1,5 +1,3 @@
-import { getPath } from './helpers'
-
 export const domain = 'https://wolfssuperiorsandwiches.com'
 export const name = "Wolf's Superior Sandwiches"
 export const phone = "484-480-3181"
@@ -15,12 +13,8 @@ export const networks = [
     "url": "https://www.facebook.com/WolfsSuperiorSandwiches",
     "text": "Like Us on Facebook!",
   },
-  {
-    "name": "Twitter",
-    "url": "https://twitter.com/wolfssuperiorsandwiches",
-    "text": "Follow Us on Twitter",
-  },
 ]
+
 export const hours = [
   { days: "Mon-Thurs", open: 11, close: 10 },
   { days: "Fri-Sat", open: 11, close: 11 },
@@ -702,9 +696,9 @@ export const businessJson = {
     "postalCode": "19104"
   },
   "telePhone": "484-487-3970",
-  "image": getPath('/static/wolfie.png'),
-  "url": getPath(),
-  "paymentAccepted": [ "cash", "check", "credit card" ],
+  "image": 'https://wolfssuperiorsandwiches.com/static/wolfie.png',
+  "url": 'https://wolfssuperiorsandwiches.com',
+  "paymentAccepted": [ "cash", "credit card" ],
   "openingHours": "Mo 11:00-22:00,Tu 11:00-22:00,We 11:00-22:00,Th 11:00-22:00,Fr 11:00-23:00,Sa 11:00-23:00,Su 11:00-21:00",
   "openingHoursSpecification": [
     {
