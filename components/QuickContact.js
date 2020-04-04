@@ -15,7 +15,7 @@ import {
 
 const QuickContact = ({
   className: parentClassNames,
-  ...props,
+  ...props
 }) => {
   const [ fb, twitter ] = networks
   return (

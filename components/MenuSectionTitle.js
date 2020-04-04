@@ -4,7 +4,7 @@ import classnames from 'classnames'
 const MenuSectionTitle = ({
   className: parentClassNames,
   headerLevel = 2,
-  ...props,
+  ...props
 }) => {
   const HeaderElement = `h${headerLevel}`
 

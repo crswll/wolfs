@@ -7,7 +7,6 @@ const SimpleMenuItem = ({
   className: parentClassNames,
   item,
   headerLevel = 3,
-  ...props,
 }) => {
   const { name, description, price, tags } = item
   const HeaderTag = `h${headerLevel}`

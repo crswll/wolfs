@@ -4,14 +4,14 @@ import { getPath } from '../helpers'
 const Logo = ({
   title,
   className: parentClassNames,
-  ...props,
+  ...props
 }) => {
   return (
     <div className={`${parentClassNames || ''}`} {...props}>
       <div className="flex items-center">
         <img
           className="w-full"
-          src={getPath('/static/wolfie.png')}
+          src={getPath('/wolfie.png')}
           alt=""
         />
         <span className="visually-hidden">{name}</span>

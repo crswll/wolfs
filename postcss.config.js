@@ -1,41 +1,26 @@
 
-const plugins = [
-  require('postcss-import'),
-  require('tailwindcss')('tailwind.js'),
-  require('postcss-preset-env'),
-]
+const plugins = {
+  'postcss-import': {},
+  'tailwindcss': {},
+  'postcss-preset-env': {}
+}
 
 if (process.env.NODE_ENV === 'production') {
-  class TailwindExtractor {
-    static extract(content) {
-      return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-    }
+  plugins['@fullhuman/postcss-purgecss'] = {
+    content: [
+      './pages/**/*.js',
+      './components/**/*.js',
+    ],
+    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   }
 
-  plugins.push(
-    require('@fullhuman/postcss-purgecss')({
-      content: [
-        './pages/**/*.js',
-        './components/**/*.js',
-      ],
-      extractors: [
-        {
-          extractor: TailwindExtractor,
-          extensions: ["js"]
-        }
-      ]
-    })
-  )
-
-  plugins.push(
-    require('cssnano')({
-      preset: ['default', {
-        discardComments: {
-          removeAll: true
-        },
-      }],
-    })
-  )
+  plugins['cssnano'] = {
+    preset: ['default', {
+      discardComments: {
+        removeAll: true
+      },
+    }],
+  }
 }
 
 module.exports = {

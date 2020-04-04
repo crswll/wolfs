@@ -13,5 +13,5 @@ export const kebab = s => s
   .replace(/[^a-z0-9\s]/g, '')
   .replace(/\s+/g, '-')
 
-export const getPath = path => `${publicRuntimeConfig.publicUrl}${path || ''}`
-export const isLive = publicRuntimeConfig.isLive
+export const getPath = path => `${path || ''}`
+export const isLive = process.env.NODE_ENV === 'production'
