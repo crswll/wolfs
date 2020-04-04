@@ -696,7 +696,7 @@ export const businessJson = {
     "postalCode": "19104"
   },
   "telePhone": "484-487-3970",
-  "image": 'https://wolfssuperiorsandwiches.com/static/wolfie.png',
+  "image": 'https://wolfssuperiorsandwiches.com/wolfie.png',
   "url": 'https://wolfssuperiorsandwiches.com',
   "paymentAccepted": [ "cash", "credit card" ],
   "openingHours": "Mo 11:00-22:00,Tu 11:00-22:00,We 11:00-22:00,Th 11:00-22:00,Fr 11:00-23:00,Sa 11:00-23:00,Su 11:00-21:00",
