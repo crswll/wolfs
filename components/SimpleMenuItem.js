@@ -13,8 +13,8 @@ const SimpleMenuItem = ({
 
   return (
     <li className={classnames(parentClassNames)}>
-      <HeaderTag className="text-scale-2 flex items-baseline text-dark">
-        <span className="mr-1 mb-1 block font-600" children={name} />
+      <HeaderTag className="flex items-baseline text-scale-2 text-darker">
+        <span className="block mb-1 mr-1 font-600" children={name} />
         {tags && (
           <div className="ml-1">
             {tags.map(tag =>
@@ -33,7 +33,7 @@ const SimpleMenuItem = ({
       </HeaderTag>
       <Price className="text-scale-1" price={price} />
       {description &&
-        <p className="mt-1 text-darker font-sans">
+        <p className="mt-1 font-sans text-darker">
           {description}
         </p>
       }

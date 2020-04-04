@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import classnames from 'classnames'
 
 import Container from '../components/Container'
 import Logo from '../components/Logo'
@@ -37,19 +38,19 @@ const Home = () => (
       <QuickContact />
     </Container>
 
-    <div className="bg-lighter my-3">
+    <div className="my-3 bg-lighter">
       <Container className="p-3 text-scale-2">
         <p>Wolf's Superior Sandwiches offers a tricked out American sandwich shop menu with the classics you know and love, and specialty items you will only find here.</p>
       </Container>
     </div>
 
     <Container className="px-3" id="menu">
-      <h1 className="text-scale-5 mb-2">Menu</h1>
-      <ul className="list-reset text-scale-0 narrow:text-scale-1 mb-2 leading-loose md:leading-normal">
+      <h1 className="mb-2 text-scale-5">Menu</h1>
+      <ul className="mb-2 leading-loose list-reset text-scale-0 narrow:text-scale-1 md:leading-normal">
         {menuSectionOrder.map(section =>
-          <li key={section} className="inline-block after:comma mr-1">
+          <li key={section} className="inline-block mr-1 after:comma">
             <a
-              className="text-primary-darker no-underline"
+              className="no-underline text-primary-darker"
               href={`#${kebab(section)}`}
               children={section}
             />
@@ -63,7 +64,10 @@ const Home = () => (
         )
         .map((section, index) =>
         <MenuSection
-          className={`pb-3 pt-3 border-light ${index !== menuSections.length -1 && 'border-b-1'}`}
+          className={classnames(
+            'pb-3 pt-3 border-lighter',
+            { 'border-b': index !== menuSections.length -1 }
+          )}
           headerLevel={2}
           key={section.title}
           id={kebab(section.title)}
@@ -73,9 +77,9 @@ const Home = () => (
     </Container>
 
     <footer className="bg-lighter">
-        <Container className="p-3 py-2 text-scale-n1 leading-loose">
+        <Container className="p-3 py-2 leading-loose text-scale-n1">
           <p>Consuming raw or undercooked meats, poultry, seafood, shellfish or egg may increase your risk of foodborne illness.</p>
-          <ul className="list-reset mt-2">
+          <ul className="mt-2 list-reset">
             <li><strong>GF</strong> = Available Gluten Free</li>
             <li><strong>SR</strong> = Served on Seeded Roll</li>
             <li><strong>W</strong> = White Pizza</li>
