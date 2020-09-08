@@ -13,6 +13,8 @@ const Logo = ({
           className="w-full"
           src={getPath('/wolfie.png')}
           alt=""
+          width={250}
+          height={237}
         />
         <span className="visually-hidden">{name}</span>
       </div>
