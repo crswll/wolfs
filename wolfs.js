@@ -732,7 +732,7 @@ export const menuSections = [
   },
   {
     "title": "Pizza",
-    "description": "Garlic dipping sauce add $1.00",
+    "description": "Hand Tossed. Garlic dipping sauce add $1.00",
     "items": [
       {
         "name": "Small (13 inch)",
@@ -742,6 +742,19 @@ export const menuSections = [
         "name": "Large (16 inch)",
         "price": 16,
       },
+      {
+        "name": "Stuffed Crust",
+        "price": 18,
+      },
+      {
+        "name": "Boardwalk Style",
+        "price": 16,
+      },
+      {
+        "name": "Chicago Deep Dish",
+        "price": 28,
+      },
+      {},
       {
         "name": "Toppings",
         "price": "+$2.00 Each",

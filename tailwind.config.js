@@ -3,6 +3,11 @@
 const pxToRem = (px, base = 16) => `${px / base}rem`
 
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+
   theme: {
     colors: {
       'transparent': 'transparent',
