@@ -218,12 +218,6 @@ export const menuSections = [
         "tags": ["GF"],
       },
       {
-        "name": "The Thanksgiving Jawn",
-        "description": "sliced Turkey, stuffing, cranberry, mayo",
-        "price": 10.5,
-        "tags": [],
-      },
-      {
         "name": "The Sam Elliot",
         "description": "A Chicken Fried Cheesesteak! Buttermilk Marinated Steak, Floured and Flash Fried, Topped with Country Style Sausage Gravy",
         "price": 13,
@@ -237,6 +231,7 @@ export const menuSections = [
       {
         "name": "The Nashville Rebel",
         "description": "Funnel Cake Fried Chicken, Homemade Nashville Style Hot Sauce, Lettuce, Mayo, Pickles",
+        "price": 13,
       },
       {
         "name": "The General Tso-gie",
@@ -256,6 +251,7 @@ export const menuSections = [
       {
         "name": "The Diablo",
         "description": "Smoked Pork Belly, Horseradish Pickles, Cheddar, Mayo, BBQ, Apple Slaw, Toasted Roll",
+        "price": 12,
       },
       {
         "name": "The Iron Man",
@@ -265,6 +261,7 @@ export const menuSections = [
       {
         "name": "The Captain America",
         "description": "Chicken Cutlet, Capicola, American Cheese, Arugula, Tomato, Honey Dijon, Toasted Roll",
+        "price": 12,
       },
       {
         "name": "The Thanksgiving Jawn",
@@ -294,6 +291,7 @@ export const menuSections = [
       {
         "name": "The HBK",
         "description": "Dorito and Cheeto Crusted Chicken Cutlet, Hot Pepper Spread, Cheese Sauce, Tomato, Red Onion, Jalapenos, Ranch",
+        "price": 13,
       },
       {
         "name": "The Black Panther",
