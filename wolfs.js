@@ -515,7 +515,7 @@ export const menuSections = [
       },
       {
         "name": "Pork Belly",
-        "description": "spice rubbed pork belly, arugula, cucumber, apple, slaw, cilantro",
+        "description": "spice rubbed pork belly, arugula, cucumber apple slaw, cilantro",
         "price": 11,
         "tags": ['GF'],
       },
