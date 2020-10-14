@@ -515,7 +515,7 @@ export const menuSections = [
       },
       {
         "name": "Pork Belly",
-        "description": "spice rubbed pork belly, arugula, cucumber apple slaw, cilantro",
+        "description": "spice rubbed pork belly, arugula, cucumber, apple, slaw, cilantro",
         "price": 11,
         "tags": ['GF'],
       },
@@ -732,7 +732,7 @@ export const menuSections = [
   },
   {
     "title": "Pizza",
-    "description": "Hand Tossed. Garlic dipping sauce add $1.00",
+    "description": "Hand Tossed. Garlic dipping sauce add $1.00.",
     "items": [
       {
         "name": "Small (13 inch)",
@@ -754,7 +754,10 @@ export const menuSections = [
         "name": "Chicago Deep Dish",
         "price": 28,
       },
-      {},
+      {
+        "name": "Gluten Free",
+        "price": 16,
+      },
       {
         "name": "Toppings",
         "price": "+$2.00 Each",
