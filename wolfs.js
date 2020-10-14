@@ -582,7 +582,12 @@ export const menuSections = [
         "price": 2,
       },
       {
-        "name": "Cucumber Apple Slaw	Potato Salad",
+        "name": "Cucumber Apple Slaw",
+        "price": 2,
+        "tags": ["VEG"],
+      },
+      {
+        "name": "Potato Salad",
         "price": 2,
         "tags": ["VEG"],
       },
