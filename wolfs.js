@@ -530,6 +530,11 @@ export const menuSections = [
         "price": 8,
       },
       {
+        "name": "Fried Pepper Shooters",
+        "price": 10,
+        "tags": ["VEG"],
+      },
+      {
         "name": "French Fries or Tater Tots",
         "price": 5,
         "tags": ["VEG"],
