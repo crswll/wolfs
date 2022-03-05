@@ -29,6 +29,7 @@ const Home = () => (
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     </Head>
+
     <div className="bg-lighter" style={{ height: 12 }}></div>
 
     <Container className="relative" style={{ width: 250, height: 237 }}>
