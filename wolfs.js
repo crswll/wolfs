@@ -15,7 +15,7 @@ export const networks = [
 ]
 
 export const hours = [
-  { days: "Oepn Everyday", open: 11, close: 9 }
+  { days: "Open Everyday", open: 11, close: 9 }
 ]
 
 export const tagNames = {
