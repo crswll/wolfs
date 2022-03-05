@@ -11,7 +11,7 @@ const Logo = ({
       <div className="flex items-center">
         <img
           className="w-full"
-          src={getPath('/wolfie.png')}
+          src={getPath('/wolfie.tiny.png')}
           alt=""
           width={250}
           height={237}
