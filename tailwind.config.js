@@ -3,10 +3,10 @@
 const pxToRem = (px, base = 16) => `${px / base}rem`
 
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
+  content: [
+    'pages/**/*',
+    'components/**/*',
+  ],
 
   theme: {
     colors: {

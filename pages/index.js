@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import classnames from 'classnames'
 
@@ -28,13 +29,14 @@ const Home = () => (
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     </Head>
+
     <div className="bg-lighter" style={{ height: 12 }}></div>
 
     <Container className="relative" style={{ width: 250, height: 237 }}>
       <Logo title={name} className="w-full mx-auto -mt-2" />
       <div className="absolute bottom-0 right-0" style={{ width: 50, height: 50 }}>
         <a href={fb.url} className="flex items-center justify-center w-full h-full mr-1 rounded-full bg-facebook" style={{ color: '#fff' }}>
-          <FacebookLogo style={{ width: 25, height: 25 }} className="fill-current" title={fb.text} />
+          <FacebookLogo style={{ width: 25, height: 25 }} className="fill-lightest" title={fb.text} />
         </a>
       </div>
     </Container>
@@ -42,6 +44,12 @@ const Home = () => (
     <Container className="py-2">
       <QuickContact />
     </Container>
+
+    <div className="max-w-3xl px-3 my-3 mx-auto">
+      <a className="shadow-lg flex justify-center text-scale-3 bg-primary p-2 rounded-lg text-lightest" href="https://slicelife.com/restaurants/pa/aston/19014/wolf-s-superior-sandwiches/menu">
+        Order Wolf's Online
+      </a>
+    </div>
 
     <div className="my-3 text-darker">
       <Container className="px-3 text-scale-2">
