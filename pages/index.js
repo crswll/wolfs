@@ -35,7 +35,7 @@ const Home = () => (
       <Logo title={name} className="w-full mx-auto -mt-2" />
       <div className="absolute bottom-0 right-0" style={{ width: 50, height: 50 }}>
         <a href={fb.url} className="flex items-center justify-center w-full h-full mr-1 rounded-full bg-facebook" style={{ color: '#fff' }}>
-          <FacebookLogo style={{ width: 25, height: 25 }} className="fill-current" title={fb.text} />
+          <FacebookLogo style={{ width: 25, height: 25 }} className="fill-lightest" title={fb.text} />
         </a>
       </div>
     </Container>
