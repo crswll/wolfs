@@ -44,6 +44,12 @@ const Home = () => (
       <QuickContact />
     </Container>
 
+    <div className="max-w-3xl px-3 my-3 mx-auto">
+      <a className="shadow-lg flex justify-center text-scale-3 bg-primary p-2 rounded-lg text-lightest" href="https://slicelife.com/restaurants/pa/aston/19014/wolf-s-superior-sandwiches/menu">
+        Order Wolf's Online
+      </a>
+    </div>
+
     <div className="my-3 text-darker">
       <Container className="px-3 text-scale-2">
         <p>Wolf's Superior Sandwiches offers a tricked out American sandwich shop menu with the classics you know and love, and specialty items you will only find here.</p>
