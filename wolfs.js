@@ -15,9 +15,7 @@ export const networks = [
 ]
 
 export const hours = [
-  { days: "Mon-Thurs", open: 11, close: 9 },
-  { days: "Fri-Sat", open: 11, close: 10 },
-  { days: "Sun", open: 11, close: 9 },
+  { days: "Oepn Everyday", open: 11, close: 9 }
 ]
 
 export const tagNames = {
@@ -877,7 +875,7 @@ export const businessJson = {
   "image": 'https://wolfssuperiorsandwiches.com/wolfie.png',
   "url": 'https://wolfssuperiorsandwiches.com',
   "paymentAccepted": [ "cash", "credit card" ],
-  "openingHours": "Mo 11:00-22:00,Tu 11:00-22:00,We 11:00-22:00,Th 11:00-22:00,Fr 11:00-23:00,Sa 11:00-23:00,Su 11:00-21:00",
+  "openingHours": "Mo 11:00-21:00,Tu 11:00-21:00,We 11:00-21:00,Th 11:00-21:00,Fr 11:00-21:00,Sa 11:00-21:00,Su 11:00-21:00",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -886,27 +884,13 @@ export const businessJson = {
         "Tuesday",
         "Wednesday",
         "Thursday",
-      ],
-      "opens": "11:00",
-      "closes": "22:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
         "Friday",
         "Saturday",
-      ],
-      "opens": "11:00",
-      "closes": "23:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
         "Sunday",
       ],
       "opens": "11:00",
       "closes": "21:00"
-    }
+    },
   ],
   "geo": {
     "@type": "GeoCoordinates",
