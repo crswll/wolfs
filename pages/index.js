@@ -46,7 +46,7 @@ const Home = () => (
     </Container>
 
     <div className="max-w-3xl px-3 my-3 mx-auto">
-      <a className="shadow-lg flex justify-center text-scale-3 bg-primary p-2 rounded-lg text-lightest" href="https://slicelife.com/restaurants/pa/aston/19014/wolf-s-superior-sandwiches-aston/menu">
+      <a className="shadow-lg flex justify-center text-scale-3 bg-primary p-2 rounded-lg text-lightest" href="http://www.toasttab.com/wolfssuperiorsandwiches">
         Order Wolf's Online
       </a>
     </div>
