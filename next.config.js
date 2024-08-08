@@ -4,7 +4,7 @@ module.exports = {
     return [
       {
         source: '/',
-        destination: 'https://www.toasttab.com/wolfssuperiorsandwiches',
+        destination: 'https://order.toasttab.com/online/locations/badda70f-ee35-47fe-b99d-248fb0d3ec85/default',
         permanent: true,
       },
     ]
